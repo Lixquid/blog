@@ -11,11 +11,15 @@ First up is a very mundane affair; keys! Not cryptography keys, real world keys 
 
 A solution I've used is getting a pack of Key Covers; brightly coloured circles of plastic that just slip over the head of the key, and make it easy to tell at a glance which key is what.
 
-They've got a few adantages over other solutions;
+They've got a few advantages over other solutions;
 
-- Stickers need a solid surface to adhere to, and typically rub off from metal quite easily.
-- Permanent marker usually only comes in a few colours, and also permanently marks the key in question.
-- Key tags (little plastic containers with a card you can write on) can be bulky if you have enough keys that need an organization system in the first place, and can get smudged if wet.
+- Stickers need a solid surface to adhere to, and typically rub off from metal
+  quite easily.
+- Permanent marker usually only comes in a few colours, and also permanently
+  marks the key in question.
+- Key tags (little plastic containers with a card you can write on) can be
+  bulky if you have enough keys that need an organization system in the first
+  place, and can get smudged if wet.
 
 ![Key Covers](./image.jpg)
 (Image from https://keyring.com/key-identifier-ring-collars/)
