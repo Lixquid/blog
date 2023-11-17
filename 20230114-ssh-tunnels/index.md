@@ -215,7 +215,7 @@ Some extra flags that are useful when using ssh as a tunnel:
 
 If you've read my previous post on
 [killing hung SSH sessions](../20200821-ssh-killinghungsessions), I talk about
-escape sequences (tl;dr: <kbd>Enter</kbd>, <kbd>~</kbd>, key). The escape
+escape sequences (tl;dr: <kbd>Enter</kbd>, <kbd>\~</kbd>, key). The escape
 sequence &#x23CE;~C will open a mini ssh command console, which will allow you
 to establish these forwarding tunnels using an existing ssh connection; no need
 to open another terminal!

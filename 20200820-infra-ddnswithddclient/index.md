@@ -30,7 +30,7 @@ constantly addressable domain name.
 4. In this folder, create a new `ddclient.conf` file, with the following
    contents:
 
-   ```ini
+   ```ini title=ddclient.conf
    use=web, web=ipinfo.io/ip
    protocol=cloudflare, \
    zone=<your zone>, \
@@ -41,7 +41,7 @@ constantly addressable domain name.
 
    So, for example:
 
-   ```ini
+   ```ini title="Example ddclient.conf"
    use=web, web=ipinfo.io/ip
    protocol=cloudflare, \
    zone=example.com, \
@@ -58,7 +58,7 @@ constantly addressable domain name.
 5. Also in the folder, create a new `docker-compose.yml` file, with the
    following contents:
 
-   ```yml
+   ```yml title=docker-compose.yml
    version: "3.7"
    services:
      ddclient:
@@ -75,7 +75,7 @@ constantly addressable domain name.
 
    So, for example:
 
-   ```yml
+   ```yml title="Example ddclient.conf"
    version: "3.7"
    services:
      ddclient:

@@ -17,18 +17,18 @@ The steps are as follows:
 1. `cd` into the newer repository
 2. Add the older repository as a remote
 
-   ``` sh
+   ```sh
    git remote add old https://example.com/older/repo
    ```
 3. Fetch this remote
 
-   ``` sh
+   ```sh
    git fetch --tags old
    ```
 4. Merge in the branch you'd like to preserve from the older repository into the
    newer repository
 
-   ``` sh
+   ```sh
    git merge old/oldbranch -s ours --allow-unrelated-histories
    ```
 

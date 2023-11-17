@@ -34,7 +34,7 @@ workflows do not support feet, and you end up silently shooting nothing.
 you forgot to quote "your foot", and you end up shooting yourself, then
 complaining you can't find your feet.
 
-```
+```sh
 $ ls
 you.head you.body you_left.foot you_right.foot
 $ rm * .foot

@@ -18,7 +18,7 @@ a = b // A-OK!
 
 This is opposed to *Nominal* type systems which identify their types solely by their name:
 
-```java
+```java title=Java
 class A { private int a; }
 class B { private int a; }
 
@@ -26,7 +26,7 @@ class Program {
     void run() {
         A a = new A();
         B b = new B();
-        a = b; // ERROR! Incompatible types
+        a = b; // COMPILE ERROR! Incompatible types
     }
 }
 ```
@@ -35,7 +35,7 @@ However, nominal type systems do have their benefits. Let's say you're dealing w
 
 In base TypeScript, this is a problem; they're both just a 2-tuple of numbers, so they can freely passed to functions expecting the other type.
 
-```ts
+```ts type=errors
 type LatLon = [number, number];
 type XY = [number, number];
 
@@ -67,11 +67,11 @@ function fooLatLonCoord(c: LatLon) {/* ... */}
 const latlonCoord = [20, 30] as LatLon;
 const xyCoord = [1, 2] as XY;
 
-fooAnyCoord(latlonCoord); // A-OK!
-fooAnyCoord(xyCoord); // A-OK!
+fooAnyCoord(latlonCoord); // OK
+fooAnyCoord(xyCoord); // OK
 fooXYCoord(latlonCoord); // Compile error
-fooXYCoord(xyCoord); // A-OK!
-fooLatLonCoord(latlonCoord); // A-OK!
+fooXYCoord(xyCoord); // OK
+fooLatLonCoord(latlonCoord); // OK
 fooLatLonCoord(xyCoord); // Compile error
 ```
 
@@ -103,7 +103,7 @@ Intersection types are less well known than their counterpart Union types, but t
 
 ```ts
 type MyType = {a: 1} & {b: 2}
-const x: MyType = {a: 1, b: 2}
+const x: MyType = {a: 1, b: 2} // OK
 ```
 
 This makes it useful for specializing values by adding a discriminator, as a generic value can easily be specialized with a small intersecting value.

@@ -49,7 +49,7 @@ don't keep forgetting the rules (oops).
     > **Example**: There are 7 cards in the hand.
     > - Player A predicts 3
     > - Player B predicts 2
-    > - Player C, the dealer, *cannot* predict 2, as $`3 + 2 + 2 = 7`$.
+    > - Player C, the dealer, *cannot* predict 2, as `3 + 2 + 2 = 7`.
 
 ## During a Round ##
 
@@ -91,7 +91,7 @@ don't keep forgetting the rules (oops).
     - If more than 7 players would like to play, the number of initial cards
       can be decreased.
 
-        > **Example**: If 8 players want to play, $`52 / 8 = 6.5`$, so the
+        > **Example**: If 8 players want to play, `52 / 8 = 6.5`, so the
         > starting hand will have 6 cards.
 - Double Nil
     - A player can opt to not look at their cards, and when it's their turn to

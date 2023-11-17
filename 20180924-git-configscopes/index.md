@@ -24,9 +24,7 @@ options are valid across all scopes!
 One use of this is to have user identity information kept in the repository's
 config file.
 
-`.git/config`:
-
-```
+```ini title=.git/config
 [user]
     name = My Name
     email = my.name@example.com
@@ -37,14 +35,12 @@ config file.
 This also works in reverse; you can configure a remote at the global
 configuration level:
 
-`~/.gitconfig`
-
-```
+```ini title=~/.gitconfig
 [remote "remotename"]
     url = ssh://git@127.0.0.1/gitrepo
 ```
 
-```
+```sh title=Shell
 $ git init
 Initialized empty Git repository in ...
 $ git fetch remotename
