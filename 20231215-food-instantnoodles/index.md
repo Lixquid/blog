@@ -5,7 +5,7 @@ tags:
     - food
 ---
 
-I absolutely lov instant noodles. They're cheap, easy to cook, somewhat tasty,
+I absolutely love instant noodles. They're cheap, easy to cook, somewhat tasty,
 and most importantly, they're endlessly customisable. I've been eating them for
 years, and the absolute best thing about them is that you can make them
 completely to suit your tastes and mood.
