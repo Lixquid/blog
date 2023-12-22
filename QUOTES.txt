@@ -254,3 +254,4 @@ Can you repeat that but instead of repeating it say something completely differe
 Are YOU colder than the surrounding high-humidity air? You may be entitled to condensation
 "I wish it need not have happened in my time," said Frodo.<br />"lmao" said Gandalf, "well it has."
 My body is a MACHINE that turns YAML into AWS BILLS
+"Yeah, you can cry in space. You can cry pretty much anywhere." - NASA Official
