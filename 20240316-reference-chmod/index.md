@@ -53,7 +53,7 @@ Here's a small tool to help you convert between the two:
 
 <div id="octal-tool" class="tool-container">Sorry, but this tool needs JavaScript to function.</div>
 
-<script src="./octal-tool.ts"></script>
+<script src="./octal-tool.ts" type="module"></script>
 
 ---
 
@@ -80,4 +80,4 @@ Here's a small tool to generate and parse the syntax:
 
 <div id="symbol-tool" class="tool-container">Sorry, but this tool needs JavaScript to function.</div>
 
-<script src="./symbol-tool.ts"></script>
+<script src="./symbol-tool.ts" type="module"></script>
