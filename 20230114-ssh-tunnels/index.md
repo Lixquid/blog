@@ -1,6 +1,7 @@
 ---
 title: SSH Tunnels
 date: 2023/01/14
+edited: 2024/03/16
 tags:
     - ssh
 ---
@@ -35,6 +36,21 @@ myriad of servers and targets:
 - *Target*: The machine you're trying to get / grant access to; visible only to
   *either* the local or remote (depending on local or remote forwarding!)
 
+```
+Diagram Key:
+╔════════════════════════════════════╗
+║Network / Firewall ═════════════════║
+║                                    ║
+║ ┌────────────────────────────────┐ ║
+║ │Machine ════════════════════════│ ║
+║ │╭──────────────╮ ╭──────────────┴╮║
+║ ││Port          │ │           Port│║
+║ ││Hidden Service│ │Exposed Service│║
+║ │╰──────────────╯ ╰──────────────┬╯║
+║ └────────────────────────────────┘ ║
+╚════════════════════════════════════╝
+```
+
 ## `-L`: Local Forwarding
 
 ```
@@ -51,51 +67,50 @@ Some use cases for this:
   access it from your local
 
 In this example, the remote machine `10.10.10.1` has a service running on port
-443 that is blocked by a firewall. Port 8000 is bound to on the local machine;
-any traffic sent to it is forwarded to the remote machine via ssh. From there,
-`sshd` forwards that traffic to `localhost:443`.
+`443` that is blocked by a firewall. Port `8443` is bound to on the local
+machine; any traffic sent to it is forwarded to the remote machine via ssh.
+From there, `sshd` forwards that traffic to `localhost:443`.
 
 ```
-ssh -L 8000:localhost:443 10.10.10.1
+┌───────┐      ┌───────────────┐
+│You ═══│      │10.10.10.1 ════│
+│       │      │      ╭───────╮│
+│curl ───────▶X│      │443    ││
+└───────┘      │      │Service││
+               │      ╰───────╯│
+               └───────────────┘
 
-┌─────────┐        ┌───────────┐
-│Local    │        │Remote     │
-│127.0.0.1│        │10.10.10.1 │
-│     ┌───┴┐      ┌┴───┐       │
-│     │Port│      │sshd│       │
-│     │8000├─────►│  22├──┐    │
-│     └───┬┘      └┬───┘  │    │
-│         │        │      ▼    │
-└─────────┘        │ ┌───────┐ │
-                   │ │Service│ │
-                   │ │    443│ │
-                   │ └───────┘ │
-                   │           │
-                   └───────────┘
+ssh -L 8443:localhost:443 10.10.10.1
+┌────────┐     ┌───────────────┐
+│You ════│     │10.10.10.1 ════│
+│        │    ╭┴───╮           │
+│curl ─╮ │  ┌─▶22  ├────────╮  │
+│      ▼ │  │ │sshd│        │  │
+│  ╭────╮│  │ ╰┬───╯  ╭─────▼─╮│
+│  │8443├───┘  │      │443    ││
+│  │ssh ││     │      │Service││
+│  ╰────╯│     │      ╰───────╯│
+└────────┘     └───────────────┘
 ```
 
-In this example, there is a target server `10.10.10.200` that is running a
-service on port 443, but is on a closed network with the remote server
-`10.10.10.1`. Here, port 8000 is bound on the local machine as before, and
+In this example, there is a target server `10.10.10.2` that is running a
+service on port `443`, but is on a closed network with the remote server
+`10.10.10.1`. Here, port `8443` is bound on the local machine as before, and
 traffic is forwarded to the remote server. In this case, `sshd` forwards the
-traffic to the target server on port 443.
+traffic to the target server on port `443`.
 
 ```
-ssh -L 8000:10.10.10.200:443 10.10.10.1
-
-               ┌─ Closed Network ──────────────────────┐
-               │                                       │
-┌─────────┐    │ ┌───────────┐        ┌────────────┐   │
-│Local    │    │ │Remote     │        │Target      │   │
-│127.0.0.1│    │ │10.10.10.1 │        │10.10.10.200│   │
-│     ┌───┴┐  ┌┴─┴─┐         │       ┌┴──────┐     │   │
-│     │Port│  │sshd│         │       │Service│     │   │
-│     │8000├─►│  22├─────────┼──────►│    443│     │   │
-│     └───┬┘  └┬─┬─┘         │       └┬──────┘     │   │
-│         │    │ │           │        │            │   │
-└─────────┘    │ └───────────┘        └────────────┘   │
-               │                                       │
-               └───────────────────────────────────────┘
+ssh -L 8443:10.10.10.2:443 10.10.10.1
+┌────────┐    ╔══════════════════════════════════╗
+│You ════│    ║Closed Network ═══════════════════║
+│        │    ║┌────────────┐      ┌────────────┐║
+│curl ─╮ │    ║│10.10.10.1 ═│      │10.10.10.2 ═│║
+│      ▼ │   ╭─┴──╮         │     ╭┴──────╮     │║
+│  ╭────╮│ ┌─▶22  ├───────────────▶443    │     │║
+│  │8443├──┘ │sshd│         │     │Service│     │║
+│  │ssh ││   ╰─┬──╯         │     ╰┬──────╯     │║
+│  ╰────╯│    ║└────────────┘      └────────────┘║
+└────────┘    ╚══════════════════════════════════╝
 ```
 
 ## `-R`: Remote Forwarding
@@ -116,86 +131,82 @@ Some use cases:
 - You're within a closed network and want to grant access to a hidden server
   from a publicly accessible server.
 
-In this example, you have a local service running on port 443 you want to
+In this example, you have a local service running on port `443` you want to
 expose, but your local machine is inside a closed network that accepts no
 incoming connections. First, a connection is made to the remote server
-`10.10.10.1`, and told to expose Port 9000 on the remote machine. Second, with
-the outbound connection still active, any traffic sent to Port 9000 on the
-remote server is tunnelled back to the local machine, where ssh forwards it to
-`localhost:443`.
+`10.10.10.1`, and told to expose port `8443` on the remote machine. Second,
+with the outbound connection still active, any traffic sent to port `8443` on
+the remote server is tunnelled back to the local machine, where ssh forwards it
+to `localhost:443`.
 
 ```
 ssh -R 9000:localhost:443 10.10.10.1
+╔═════════════════╗
+║Closed Network ══║
+║                 ║         ┌─────────────┐
+║ ┌──────────────┐║         │10.10.10.1 ══│
+║ │You ═════════ │║         │             │
+║ │ ╭───╮        │║        ╭┴─────┬ ─ ─ ─ ┴
+║ │ │ssh├──────────────────▶22         8443│
+║ │ ╰───╯        │║        │sshd  ├ ─ ─ ─ ┬
+║ │              │║        ╰┬─────╯       │
+║ │ ╭──────────╮ │║         └─────────────┘
+║ │ │       443│ │║  "Please
+║ │ │   Service│ │║  forward port
+║ │ ╰──────────╯ │║  8443"
+║ └──────────────┘║
+╚═════════════════╝
 
-Establishing the connection
-
-┌─ Closed ──────┐                ┌───────────┐
-│               │                │Remote     │
-│ ┌───────────┐ │                │10.10.10.1 │
-│ │Local      │ │                │           │
-│ │127.0.0.1  │ │               ┌┴───┐       │
-│ │           │ │            ┌─►│sshd│   ┌───┴┐
-│ │ ┌───┐     │ │            │  │  22├───┤9000│
-│ │ │ssh├─────┼─┼────────────┘  └┬───┘   └───┬┘
-│ │ └───┘     │ │ "Please make   │  "OK"     │
-│ │           │ │  port 9000"    │           │
-│ │           │ │                │           │
-│ │ ┌───────┐ │ │                │           │
-│ │ │Service│ │ │                │           │
-│ │ │    443│ │ │                │           │
-│ │ └───────┘ │ │                └───────────┘
-│ │           │ │
-│ └───────────┘ │
-│               │
-└───────────────┘
-
-The flow of traffic
-
-┌─ Closed ──────┐    ┌───────────┐
-│               │    │Remote     │
-│ ┌───────────┐ │    │10.10.10.1 │
-│ │Local      │ │    │           │
-│ │127.0.0.1  │ │   ┌┴───┐       │
-│ │           │ │ ┌─┤sshd│   ┌───┴┐    ┌────────┐
-│ │ ┌───┐     │ │ │ │  22├───┤9000│◄───┤External│
-│ │ │ssh│◄────┼─┼─┘ └┬───┘   └───┬┘    │Traffic │
-│ │ └─┬─┘     │ │    │           │     └────────┘
-│ │   │       │ │    │           │
-│ │   ▼       │ │    │           │
-│ │ ┌───────┐ │ │    │           │
-│ │ │Service│ │ │    │           │
-│ │ │    443│ │ │    │           │
-│ │ └───────┘ │ │    └───────────┘
-│ │           │ │
-│ └───────────┘ │
-│               │
-└───────────────┘
+╔══════════════════╗
+║Closed Network ═══║
+║                  ║        ┌─────────────┐
+║ ┌──────────────┐ ║        │10.10.10.1 ══│
+║ │You ══════════│ ║        │             │
+║ │ ╭───╮        │ ║       ╭┴─────┬───────┴╮
+║ │ │ssh◀──────────────────┤22         8443◀──── curl
+║ │ ╰─┬─╯        │ ║       │sshd  ├───────┬╯
+║ │   │          │ ║       ╰┬─────╯       │
+║ │ ╭─▼────────╮ │ ║        └─────────────┘
+║ │ │       443│ │ ║
+║ │ │   Service│ │ ║
+║ │ ╰──────────╯ │ ║
+║ └──────────────┘ ║
+╚══════════════════╝
 ```
 
 In this example, your local machine is inside a closed network with the target
-server `192.168.0.1` running a service on Port 443. You have no ssh access to
+server `192.168.0.1` running a service on port `443`. You have no ssh access to
 the target server, so instead you establish a remote forwarding connection to
 the remote server `10.10.10.1` as before. This time, the traffic is forwarded
-from Port 9000 on the remote server to your local ssh client, when then sends
+from port `8443` on the remote server to your local ssh client, when then sends
 it on to the target machine.
 
 ```
 ssh -R 9000:192.168.0.1:443 10.10.10.1
-
-┌─ Closed Network ────────────┐
-│                             │
-│ ┌───────────┐   ┌─────────┐ │   ┌──────────┐
-│ │Target     │   │Local    │ │   │Remote    │
-│ │192.168.0.1│   │127.0.0.1│ │   │10.10.10.1│
-│ │           │   │         │ │   │          │
-│ │    ┌──────┴┐  │ ┌───┐   │ │  ┌┴───┐  ┌───┴┐    ┌────────┐
-│ │    │Service│◄─┼─┤ssh├───┼─┼──┤sshd│◄─┤9000│◄───┤External│
-│ │    │    443│  │ └───┘   │ │  └┬───┘  └───┬┘    │Traffic │
-│ │    └──────┬┘  │         │ │   │          │     └────────┘
-│ │           │   │         │ │   │          │
-│ └───────────┘   └─────────┘ │   └──────────┘
-│                             │
-└─────────────────────────────┘
+╔═══════════════════════════════════╗
+║Closed Network ════════════════════║
+║                                   ║   ┌─────────────┐
+║ ┌──────────────┐  ┌──────────────┐║   │10.10.10.1 ══│
+║ │192.168.0.1 ══│  │You ═════════ │║   │             │
+║ │    ╭─────────┴╮ │╭───╮         │║  ╭┴─────┬ ─ ─ ─ ┴
+║ │    │       443│ ││ssh├─────────────▶22         8443│
+║ │    │   Service│ │╰───╯         │║  │sshd  ├ ─ ─ ─ ┬
+║ │    ╰─────────┬╯ │              │║  ╰┬─────╯       │
+║ └──────────────┘  └──────────────┘║   └─────────────┘
+╚═══════════════════════════════════╝ "Please
+                                      forward port
+                                      8443"
+╔═══════════════════════════════════╗
+║Closed Network ════════════════════║
+║                                   ║   ┌─────────────┐
+║ ┌──────────────┐  ┌──────────────┐║   │10.10.10.1 ══│
+║ │192.168.0.1 ══│  │You ══════════│║   │             │
+║ │    ╭─────────┴╮ │╭───╮         │║  ╭┴─────┬───────┴╮
+║ │    │       443◀──┤ssh◀─────────────┤22         8443◀──── curl
+║ │    │   Service│ │╰───╯         │║  │sshd  ├───────┬╯
+║ │    ╰─────────┬╯ │              │║  ╰┬─────╯       │
+║ └──────────────┘  └──────────────┘║   └─────────────┘
+╚═══════════════════════════════════╝
 ```
 
 ## Extra flags: `-f`, `-N`, `-T`
