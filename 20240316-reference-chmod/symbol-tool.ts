@@ -9,7 +9,7 @@
             style="margin-bottom: 0.5em" />
 
         <div style="display: flex">
-            <div style="flex: 1">
+            <div style="flex: 1; min-width: 12em">
                 <ul>
                     <li><label><input type="checkbox" data-name="en" /> Unspecified (All)</label></li>
                     <li><label><input type="checkbox" data-name="ea" /> All</label></li>
@@ -18,14 +18,14 @@
                     <li><label><input type="checkbox" data-name="eo" /> Other</label></li>
                 </ul>
             </div>
-            <div style="flex: 1">
+            <div style="flex: 1; min-width: 10em">
                 <ul>
                     <li><label><input type="radio" name="op" data-name="oa" /> Add</label></li>
                     <li><label><input type="radio" name="op" data-name="or" /> Remove</label></li>
                     <li><label><input type="radio" name="op" data-name="os" /> Set</label></li>
                 </ul>
             </div>
-            <div style="flex: 1">
+            <div style="flex: 1; min-width: 10em">
                 <ul>
                     <li><label><input type="checkbox" data-name="pr" /> Read</label></li>
                     <li><label><input type="checkbox" data-name="pw" /> Write</label></li>
