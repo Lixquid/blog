@@ -234,6 +234,14 @@ Text Inputs:
 - <input type="text" value="Invalid" class="invalid">
 - <input type="text" value="Disabled" disabled>
 
+Select Inputs:
+
+- <select>
+    <option>Option 1</option>
+    <option>Option 2</option>
+    <option>Option 3</option>
+  </select>
+
 Checkboxes:
 
 - <label><input type="checkbox" checked> Checkbox</label>
