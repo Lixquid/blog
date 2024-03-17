@@ -97,3 +97,14 @@ don't keep forgetting the rules (oops).
     - A player can opt to not look at their cards, and when it's their turn to
       predict, predict a *Double Nil*. A Double Nil prediction will restore one
       life if correctly played.
+
+---
+
+If you're having difficulty understanding who wins tricks, you can use this
+small tool:
+
+<div id="interactive-tool" class="interactive-container">
+    Sorry, but this section needs JavaScript to function.
+</div>
+
+<script src="./index.ts" defer type="module"></script>
