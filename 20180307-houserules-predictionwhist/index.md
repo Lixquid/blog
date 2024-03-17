@@ -19,7 +19,7 @@ don't keep forgetting the rules (oops).
       Card* in the trick, or if no trumps were played, whoever played the
       highest card of that trick's Suit.
 - **Trump Suit**: The suit that beats all other suits. In this case, always
-  :diamonds: *Diamonds*.
+  &#x2666;&#xfe0f; *Diamonds*.
     - **Trump**: A card whose suit is a *Trump Suit*.
 - **Dealer**: The person dealing the cards. This position rotates clock-wise by
   one person every round.

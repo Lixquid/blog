@@ -104,8 +104,6 @@ This is an [example link with title](https://example.com/ "Example Title").
 
 This is ~~strikethrough~~ text.
 
-This contains :smile: emoji.
-
 |   | Table | Column |
 | - | ----- | ------ |
 | 1 | 2     | 3      |
