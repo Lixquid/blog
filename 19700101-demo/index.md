@@ -213,5 +213,35 @@ With everything:
 
 ## JavaScript
 
-<button id="clickme">Hello</button>
+Loaded UI:
+
+<div id="tool" class="interactive-container">Sorry, but this section needs JavaScript to function.</div>
+
+No JavaScript:
+
+<div class="interactive-container">Sorry, but this section needs JavaScript to function.</div>
+
 <script src="./index.ts" defer type="module"></script>
+
+## UI Elements
+
+Buttons:
+
+- <button>Button</button>
+- <button disabled>Disabled</button>
+
+Text Inputs:
+
+- <input type="text" value="Text">
+- <input type="text" value="Invalid" class="invalid">
+- <input type="text" value="Disabled" disabled>
+
+Checkboxes:
+
+- <label><input type="checkbox" checked> Checkbox</label>
+- <label><input type="checkbox" class="large"> Large Checkbox</label>
+
+Radio Buttons:
+
+- <label><input type="radio" name="radio" checked> Radio 1</label>
+- <label><input type="radio" name="radio"> Radio 2</label>

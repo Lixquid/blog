@@ -1,3 +1,19 @@
-document.getElementById("clickme")?.addEventListener("click", function () {
-    (this as HTMLButtonElement).innerText = "Hello World!";
-});
+(function () {
+    const html = String.raw`
+        <button>Increment</button>:
+        <span>0</span>
+    `;
+
+    const root = document.getElementById("tool");
+    if (!root) {
+        return;
+    }
+    root.innerHTML = html;
+
+    const inc = root.querySelector("button") as HTMLButtonElement;
+    const count = root.querySelector("span") as HTMLSpanElement;
+
+    inc.addEventListener("click", function () {
+        count.innerText = (parseInt(count.innerText) + 1).toString();
+    });
+})();
