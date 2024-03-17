@@ -35,7 +35,7 @@
         </div>
     `;
 
-    const root = document.getElementById("symbol-tool");
+    const root = document.getElementById("interactive-symbol");
     if (!root) {
         return;
     }

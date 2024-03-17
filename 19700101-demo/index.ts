@@ -4,7 +4,7 @@
         <span>0</span>
     `;
 
-    const root = document.getElementById("tool");
+    const root = document.getElementById("interactive-tool");
     if (!root) {
         return;
     }

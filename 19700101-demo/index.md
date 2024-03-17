@@ -213,7 +213,7 @@ With everything:
 
 Loaded UI:
 
-<div id="tool" class="interactive-container">Sorry, but this section needs JavaScript to function.</div>
+<div id="interactive-example" class="interactive-container">Sorry, but this section needs JavaScript to function.</div>
 
 No JavaScript:
 

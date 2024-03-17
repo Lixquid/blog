@@ -39,7 +39,7 @@
         </table>
     `;
 
-    const root = document.getElementById("octal-tool");
+    const root = document.getElementById("interactive-octal");
     if (!root) {
         return;
     }
