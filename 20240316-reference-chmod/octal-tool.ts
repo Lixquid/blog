@@ -1,7 +1,6 @@
 (function () {
     const html = String.raw`
         <input
-            id="Xot-output"
             type="text"
             value="644"
             pattern="[0-7]{3}"
@@ -20,42 +19,42 @@
             <tbody>
                 <tr>
                     <th>Read</th>
-                    <td><input type="checkbox" id="Xot-or" class="large"/></td>
-                    <td><input type="checkbox" id="Xot-gr" class="large"/></td>
-                    <td><input type="checkbox" id="Xot-wr" class="large"/></td>
+                    <td><input type="checkbox" data-id="or" class="large"/></td>
+                    <td><input type="checkbox" data-id="gr" class="large"/></td>
+                    <td><input type="checkbox" data-id="wr" class="large"/></td>
                 </tr>
                 <tr>
                     <th>Write</th>
-                    <td><input type="checkbox" id="Xot-ow" class="large" checked/></td>
-                    <td><input type="checkbox" id="Xot-gw" class="large" /></td>
-                    <td><input type="checkbox" id="Xot-ww" class="large" /></td>
+                    <td><input type="checkbox" data-id="ow" class="large" checked/></td>
+                    <td><input type="checkbox" data-id="gw" class="large" /></td>
+                    <td><input type="checkbox" data-id="ww" class="large" /></td>
                 </tr>
                 <tr>
                     <th>Execute</th>
-                    <td><input type="checkbox" id="Xot-ox" class="large" /></td>
-                    <td><input type="checkbox" id="Xot-gx" class="large" /></td>
-                    <td><input type="checkbox" id="Xot-wx" class="large" /></td>
+                    <td><input type="checkbox" data-id="ox" class="large" /></td>
+                    <td><input type="checkbox" data-id="gx" class="large" /></td>
+                    <td><input type="checkbox" data-id="wx" class="large" /></td>
                 </tr>
             </tbody>
         </table>
     `;
 
-    const tool = document.getElementById("octal-tool");
-    if (!tool) {
+    const root = document.getElementById("octal-tool");
+    if (!root) {
         return;
     }
-    tool.innerHTML = html;
+    root.innerHTML = html;
 
-    const output = document.getElementById("Xot-output") as HTMLInputElement;
-    const or = document.getElementById("Xot-or") as HTMLInputElement;
-    const ow = document.getElementById("Xot-ow") as HTMLInputElement;
-    const ox = document.getElementById("Xot-ox") as HTMLInputElement;
-    const gr = document.getElementById("Xot-gr") as HTMLInputElement;
-    const gw = document.getElementById("Xot-gw") as HTMLInputElement;
-    const gx = document.getElementById("Xot-gx") as HTMLInputElement;
-    const wr = document.getElementById("Xot-wr") as HTMLInputElement;
-    const ww = document.getElementById("Xot-ww") as HTMLInputElement;
-    const wx = document.getElementById("Xot-wx") as HTMLInputElement;
+    const output = root.querySelector("input") as HTMLInputElement;
+    const or = root.querySelector('[data-id="or"]') as HTMLInputElement;
+    const ow = root.querySelector('[data-id="ow"]') as HTMLInputElement;
+    const ox = root.querySelector('[data-id="ox"]') as HTMLInputElement;
+    const gr = root.querySelector('[data-id="gr"]') as HTMLInputElement;
+    const gw = root.querySelector('[data-id="gw"]') as HTMLInputElement;
+    const gx = root.querySelector('[data-id="gx"]') as HTMLInputElement;
+    const wr = root.querySelector('[data-id="wr"]') as HTMLInputElement;
+    const ww = root.querySelector('[data-id="ww"]') as HTMLInputElement;
+    const wx = root.querySelector('[data-id="wx"]') as HTMLInputElement;
 
     // Update checkboxes from output
     const updateCheckboxes = () => {

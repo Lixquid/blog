@@ -3,7 +3,6 @@
 
     const html = String.raw`
         <input
-            id="Xst-output"
             type="text"
             value="ug+rw"
             pattern="${pattern}"
@@ -12,58 +11,48 @@
         <div style="display: flex">
             <div style="flex: 1">
                 <ul>
-                    <li><label><input type="checkbox" id="Xst-ent-none" /> Unspecified (All)</label></li>
-                    <li><label><input type="checkbox" id="Xst-ent-all" /> All</label></li>
-                    <li><label><input type="checkbox" id="Xst-ent-user" /> User</label></li>
-                    <li><label><input type="checkbox" id="Xst-ent-group" /> Group</label></li>
-                    <li><label><input type="checkbox" id="Xst-ent-other" /> Other</label></li>
+                    <li><label><input type="checkbox" data-name="en" /> Unspecified (All)</label></li>
+                    <li><label><input type="checkbox" data-name="ea" /> All</label></li>
+                    <li><label><input type="checkbox" data-name="eu" /> User</label></li>
+                    <li><label><input type="checkbox" data-name="eg" /> Group</label></li>
+                    <li><label><input type="checkbox" data-name="eo" /> Other</label></li>
                 </ul>
             </div>
             <div style="flex: 1">
                 <ul>
-                    <li><label><input type="radio" name="Xst-op" id="Xst-op-add" /> Add</label></li>
-                    <li><label><input type="radio" name="Xst-op" id="Xst-op-remove" /> Remove</label></li>
-                    <li><label><input type="radio" name="Xst-op" id="Xst-op-set" /> Set</label></li>
+                    <li><label><input type="radio" name="op" data-name="oa" /> Add</label></li>
+                    <li><label><input type="radio" name="op" data-name="or" /> Remove</label></li>
+                    <li><label><input type="radio" name="op" data-name="os" /> Set</label></li>
                 </ul>
             </div>
             <div style="flex: 1">
                 <ul>
-                    <li><label><input type="checkbox" id="Xst-per-read" /> Read</label></li>
-                    <li><label><input type="checkbox" id="Xst-per-write" /> Write</label></li>
-                    <li><label><input type="checkbox" id="Xst-per-execute" /> Execute</label></li>
+                    <li><label><input type="checkbox" data-name="pr" /> Read</label></li>
+                    <li><label><input type="checkbox" data-name="pw" /> Write</label></li>
+                    <li><label><input type="checkbox" data-name="pe" /> Execute</label></li>
                 </ul>
             </div>
         </div>
     `;
 
-    const tool = document.getElementById("symbol-tool");
-    if (!tool) {
+    const root = document.getElementById("symbol-tool");
+    if (!root) {
         return;
     }
-    tool.innerHTML = html;
+    root.innerHTML = html;
 
-    const output = document.getElementById("Xst-output") as HTMLInputElement;
-    const entNone = document.getElementById("Xst-ent-none") as HTMLInputElement;
-    const entAll = document.getElementById("Xst-ent-all") as HTMLInputElement;
-    const entUser = document.getElementById("Xst-ent-user") as HTMLInputElement;
-    const entGroup = document.getElementById(
-        "Xst-ent-group"
-    ) as HTMLInputElement;
-    const entOther = document.getElementById(
-        "Xst-ent-other"
-    ) as HTMLInputElement;
-    const opAdd = document.getElementById("Xst-op-add") as HTMLInputElement;
-    const opRemove = document.getElementById(
-        "Xst-op-remove"
-    ) as HTMLInputElement;
-    const opSet = document.getElementById("Xst-op-set") as HTMLInputElement;
-    const perRead = document.getElementById("Xst-per-read") as HTMLInputElement;
-    const perWrite = document.getElementById(
-        "Xst-per-write"
-    ) as HTMLInputElement;
-    const perExecute = document.getElementById(
-        "Xst-per-execute"
-    ) as HTMLInputElement;
+    const output = root.querySelector("input") as HTMLInputElement;
+    const eNon = root.querySelector('[data-name="en"]') as HTMLInputElement;
+    const eAll = root.querySelector('[data-name="ea"]') as HTMLInputElement;
+    const eUsr = root.querySelector('[data-name="eu"]') as HTMLInputElement;
+    const eGrp = root.querySelector('[data-name="eg"]') as HTMLInputElement;
+    const eOth = root.querySelector('[data-name="eo"]') as HTMLInputElement;
+    const oAdd = root.querySelector('[data-name="oa"]') as HTMLInputElement;
+    const oRem = root.querySelector('[data-name="or"]') as HTMLInputElement;
+    const oSet = root.querySelector('[data-name="os"]') as HTMLInputElement;
+    const pRed = root.querySelector('[data-name="pr"]') as HTMLInputElement;
+    const pWrt = root.querySelector('[data-name="pw"]') as HTMLInputElement;
+    const pExc = root.querySelector('[data-name="pe"]') as HTMLInputElement;
 
     // Update checkboxes from output
     const updateCheckboxes = () => {
@@ -78,88 +67,88 @@
         ) as RegExpMatchArray;
 
         if (entities === "") {
-            entNone.checked = true;
+            eNon.checked = true;
         } else {
-            entNone.checked = false;
+            eNon.checked = false;
         }
-        entAll.checked = entities.includes("a");
-        entUser.checked = entities.includes("u");
-        entGroup.checked = entities.includes("g");
-        entOther.checked = entities.includes("o");
+        eAll.checked = entities.includes("a");
+        eUsr.checked = entities.includes("u");
+        eGrp.checked = entities.includes("g");
+        eOth.checked = entities.includes("o");
 
-        opAdd.checked = operation === "+";
-        opRemove.checked = operation === "-";
-        opSet.checked = operation === "=";
+        oAdd.checked = operation === "+";
+        oRem.checked = operation === "-";
+        oSet.checked = operation === "=";
 
-        perRead.checked = permissions.includes("r");
-        perWrite.checked = permissions.includes("w");
-        perExecute.checked = permissions.includes("x");
+        pRed.checked = permissions.includes("r");
+        pWrt.checked = permissions.includes("w");
+        pExc.checked = permissions.includes("x");
     };
     output.addEventListener("change", updateCheckboxes);
 
     // Update output from checkboxes
     const updateOutput = (ev: Event) => {
         let entities = "";
-        if (entNone.checked && ev.target === entNone) {
-            entAll.checked = false;
-            entUser.checked = false;
-            entGroup.checked = false;
-            entOther.checked = false;
+        if (eNon.checked && ev.target === eNon) {
+            eAll.checked = false;
+            eUsr.checked = false;
+            eGrp.checked = false;
+            eOth.checked = false;
         } else if (
-            ev.target === entAll ||
-            ev.target === entUser ||
-            ev.target === entGroup ||
-            ev.target === entOther
+            ev.target === eAll ||
+            ev.target === eUsr ||
+            ev.target === eGrp ||
+            ev.target === eOth
         ) {
-            entNone.checked = false;
+            eNon.checked = false;
         }
-        if (entAll.checked) {
+        if (eAll.checked) {
             entities = "a";
         }
-        if (entUser.checked) {
+        if (eUsr.checked) {
             entities += "u";
         }
-        if (entGroup.checked) {
+        if (eGrp.checked) {
             entities += "g";
         }
-        if (entOther.checked) {
+        if (eOth.checked) {
             entities += "o";
         }
 
         let operation = "";
-        if (opAdd.checked) {
+        if (oAdd.checked) {
             operation = "+";
-        } else if (opRemove.checked) {
+        } else if (oRem.checked) {
             operation = "-";
-        } else if (opSet.checked) {
+        } else if (oSet.checked) {
             operation = "=";
         }
 
         let permissions = "";
-        if (perRead.checked) {
+        if (pRed.checked) {
             permissions += "r";
         }
-        if (perWrite.checked) {
+        if (pWrt.checked) {
             permissions += "w";
         }
-        if (perExecute.checked) {
+        if (pExc.checked) {
             permissions += "x";
         }
 
         output.value = `${entities}${operation}${permissions}`;
         output.classList.remove("invalid");
     };
-    entNone.addEventListener("change", updateOutput);
-    entAll.addEventListener("change", updateOutput);
-    entUser.addEventListener("change", updateOutput);
-    entGroup.addEventListener("change", updateOutput);
-    entOther.addEventListener("change", updateOutput);
-    opAdd.addEventListener("change", updateOutput);
-    opRemove.addEventListener("change", updateOutput);
-    opSet.addEventListener("change", updateOutput);
-    perRead.addEventListener("change", updateOutput);
-    perWrite.addEventListener("change", updateOutput);
-    perExecute.addEventListener("change", updateOutput);
+    eNon.addEventListener("change", updateOutput);
+    eAll.addEventListener("change", updateOutput);
+    eUsr.addEventListener("change", updateOutput);
+    eGrp.addEventListener("change", updateOutput);
+    eOth.addEventListener("change", updateOutput);
+    oAdd.addEventListener("change", updateOutput);
+    oRem.addEventListener("change", updateOutput);
+    oSet.addEventListener("change", updateOutput);
+    pRed.addEventListener("change", updateOutput);
+    pWrt.addEventListener("change", updateOutput);
+    pExc.addEventListener("change", updateOutput);
 
     updateCheckboxes();
 })();
