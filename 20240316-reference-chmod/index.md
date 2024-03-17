@@ -51,7 +51,7 @@ read-only permissions for the group and others, would be represented as `644`.
 
 Here's a small tool to help you convert between the two:
 
-<div id="octal-tool" class="tool-container">Sorry, but this tool needs JavaScript to function.</div>
+<div id="octal-tool" class="interactive-container">Sorry, but this tool needs JavaScript to function.</div>
 
 <script src="./octal-tool.ts" type="module"></script>
 
@@ -78,6 +78,6 @@ permissions to modify.
 
 Here's a small tool to generate and parse the syntax:
 
-<div id="symbol-tool" class="tool-container">Sorry, but this tool needs JavaScript to function.</div>
+<div id="symbol-tool" class="interactive-container">Sorry, but this section needs JavaScript to function.</div>
 
 <script src="./symbol-tool.ts" type="module"></script>
