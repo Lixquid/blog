@@ -1,6 +1,7 @@
 ---
 title: "House Rules: President"
 date: 2018/03/08
+edited: 2024/03/18
 tags:
     - houserules
     - games
@@ -10,6 +11,11 @@ Another card game popular among my friends, although less so than Prediction
 Whist. This relies more on luck, but because it's far more flexible to the
 number of players you can add more decks and have far more people playing.
 
+## Requirements ##
+
+- A standard 52 playing card deck
+- One Joker
+
 ## Glossary ##
 
 - **President**: The player currently in first place.
@@ -18,18 +24,18 @@ number of players you can add more decks and have far more people playing.
   place, respectively.
     > **Note**: With 3 players or less, there are no *Vice*s.
 
-## Rules ##
+## Card Strength ##
 
-- The deck uses 53 cards: one 52 card deck and one joker
-- The entire deck is dealt out to all players present before the game.
-- Cards have a unique order:
-    - The Joker is the strongest card
-    - Next is `2`s
-    - Next is Aces
-    - Next is Kings, and so on and so forth, down to `3`s
+Cards have a unique order:
+
+1. The Joker is the strongest card
+2. Next is `2`s
+3. Next is Aces
+4. Next is Kings, and so on and so forth, down to `3`s
 
 ## Before the Round ##
 
+- Deal the entire deck to all players present.
 - If this is the first Round of the game, skip this section and go straight to
   *During the Round*.
 - The President and the Shithead swap 2 cards. This is done by placing the
