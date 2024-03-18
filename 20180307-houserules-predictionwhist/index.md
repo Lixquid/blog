@@ -1,6 +1,7 @@
 ---
 title: "House Rules: Prediction Whist"
 date: 2018/03/07
+edited: 2024/03/18
 tags:
     - houserules
     - games
@@ -9,6 +10,10 @@ tags:
 This is a relatively popular card game among my friends that we enjoy
 playing. It's one of those many variants of "Oh Hell", canonized here so we
 don't keep forgetting the rules (oops).
+
+## Requirements ##
+
+- A standard 52 playing card deck, without Jokers.
 
 ## Glossary ##
 
