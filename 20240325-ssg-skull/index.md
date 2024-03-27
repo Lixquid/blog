@@ -1,6 +1,7 @@
 ---
 title: "Small Shelf Games: Skull"
 date: 2024/03/25
+edited: 2024/03/27
 tags:
     - small_shelf_games
     - games
@@ -22,12 +23,13 @@ the setup time and complexity, and can be taught in minutes.
 ## Skull
 
 - _Players_: 2-8
+    - _Recommended_: 3-6
 - _Complexity_: Low
 - _Type_: Bluffing
 - _Required_:
-    - A deck of Standard Playing Cards.
+    - A deck of 52 Standard Playing Cards.
 - _Optional_:
-    - Another two decks of Standard Playing Cards, identical to the first.
+    - Another two decks of 52 Standard Playing Cards, identical to the first.
 
 ## Setup
 
