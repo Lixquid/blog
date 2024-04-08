@@ -1,7 +1,7 @@
 ---
 title: "Small Shelf Games: Skull"
 date: 2024/03/25
-edited: 2024/03/27
+edited: 2024/04/08
 tags:
     - small_shelf_games
     - games
@@ -65,7 +65,7 @@ Flowers), and two face-up Win Markers in front of them.
 
 1. Choose a starting player to go first in the placement round.
 
-> Note sure who should go first? Use the player that most recently smelled a
+> **Tip:** Not sure who should go first? Use the player that most recently smelled a
 > flower!
 
 ### Placement Phase
@@ -75,9 +75,8 @@ Flowers), and two face-up Win Markers in front of them.
 2. Then, starting with the first player, they can either:
     1. Place another card face down on top of their stack, passing control to
        the next player.
-    2. Make a bid.
-        - The bid is the number of cards they think they can flip over without
-          revealing a Skull card.
+    2. Or, make a bid by saying out loud the number of cards they think they
+       can flip over without revealing a Skull card.
         - This immediately ends the Placement Phase, and starts the Bidding
           Phase, starting with the next player in turn order.
 
@@ -118,11 +117,14 @@ or they reveal a Skull card, the Reveal Phase ends.
 1. All players then pick up their stacks and reintegrate them into their hands.
 2. If the Challenger:
     - Revealed *a Skull card in their own stack*, they choose a card from their
-      hand to discard for the rest of the game.
+      hand to discard for the rest of the game. (Normally, this would be a
+      Flower card so they can still catch out other players with their Skull
+      card.)
     - Revealed *a Skull card in someone else's stack*, the Challenger shuffles
       their hand and allows the player whose stack contained the Skull card to
       draw a card at random from their hand to be discarded for the rest of the
-      game.
+      game. They might still have their Skull card, or they might not! Some
+      careful bluffing might be needed to keep the other players guessing.
     - Revealed *the number of cards they bid without revealing a Skull card*,
       they discard one of their Win Markers.
         - If the Challenger has discarded both of their Win Markers, they've
@@ -134,6 +136,15 @@ or they reveal a Skull card, the Reveal Phase ends.
       Challenger starts the next round.
     - If the Challenger revealed a Skull card in someone else's stack, the
       player whose stack contained the Skull card starts the next round.
+
+## End of the Game
+
+The game is over if either of the following conditions are met:
+
+- A player has managed to discard both of their Win Markers. They are the
+  winner!
+- Every player except one has lost all of their cards. Whoever still has cards
+  remaining is the winner!
 
 ## Variants
 
