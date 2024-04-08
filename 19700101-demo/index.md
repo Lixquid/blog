@@ -98,6 +98,13 @@ This is an [example link with title](https://example.com/ "Example Title").
 > Repellendus omnis maiores aspernatur autem et et. Eos deserunt eos ducimus.
 > Recusandae porro impedit adipisci quisquam dolores neque provident et.
 
+## Emoji
+
+- Clubs: &#x2663;&#xfe0f;
+- Diamonds: &#x2666;&#xfe0f;
+- Hearts: &#x2665;&#xfe0f;
+- Spades: &#x2660;&#xfe0f;
+
 # Extensions
 
 ## External Support
@@ -111,11 +118,23 @@ This is ~~strikethrough~~ text.
 
 ## Alerts
 
-> **Note:** This is a note.
+> **Note:** Single paragraph note.
 
-> **Tip:** This is a tip.
+> **Note:** Multiple paragraph note.
+>
+> Second paragraph.
 
-> **Warning:** This is a warning.
+> **Tip:** Single paragraph tip.
+
+> **Tip:** Multiple paragraph tip.
+>
+> Second paragraph.
+
+> **Warning:** Single paragraph warning.
+
+> **Warning:** Multiple paragraph warning.
+>
+> Second paragraph.
 
 ## Codeblocks
 

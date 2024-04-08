@@ -4,7 +4,7 @@
         <span>0</span>
     `;
 
-    const root = document.getElementById("interactive-tool");
+    const root = document.getElementById("interactive-example");
     if (!root) {
         return;
     }
