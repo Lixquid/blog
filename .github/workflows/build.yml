@@ -1,0 +1,40 @@
+name: Build and Deploy
+on:
+    push:
+        branches:
+            - master
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            # Check out the generator
+            - uses: "actions/checkout@v2"
+              with:
+                  repository: "lixquid/node-blog-generator"
+                  submodules: true
+            # Update the generator's blog submodule to the latest commit
+            - name: "Update blog submodule"
+              run: "cd blog && git reset --hard origin/master"
+            # Set up Node.js
+            - name: "Set up Node.js"
+              uses: "actions/setup-node@v4"
+            # Install dependencies
+            - name: "Install dependencies"
+              run: "yarn install"
+            # Build
+            - name: "Build"
+              run: "yarn build"
+            # Upload artifact
+            - name: "Upload artifact"
+              uses: "actions/upload-pages-artifact@v3"
+              with:
+                  path: out
+    deploy:
+        needs: build
+        runs-on: ubuntu-latest
+        permissions:
+            pages: write
+            id-token: write
+        steps:
+            - name: "Deploy to GitHub Pages"
+              uses: "actions/deploy-pages@v4"
