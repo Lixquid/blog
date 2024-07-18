@@ -2,8 +2,8 @@
 title: "Small Shelf Games: No Mercy"
 date: 2024/07/05
 tags:
-	- small_shelf_games
-	- games
+    - small_shelf_games
+    - games
 ---
 
 Welcome back to the Small Shelf Games series; a series of posts about games that
