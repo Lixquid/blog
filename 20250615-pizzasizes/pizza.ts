@@ -133,7 +133,7 @@
         let prevArea: number | null = null;
 
         // Delta area calculations
-        for (const row of rows.children) {
+        Array.from(rows.children).forEach((row) => {
             const areaTd = (row as HTMLElement).querySelector(
                 '[data-id="td-area"]',
             ) as HTMLTableCellElement;
@@ -148,7 +148,7 @@
             }
             diffTd.style.display = showDiff.checked ? "" : "none";
             prevArea = !isNaN(area) ? area : prevArea;
-        }
+        });
 
         // Diagram rendering
         const diameters = Array.from(rows.children)
@@ -184,7 +184,7 @@
         thCPA.style.display = showPrice ? "" : "none";
         const showDelta = showDiff.checked;
         thDiff.style.display = showDelta ? "" : "none";
-        for (const row of rows.children) {
+        Array.from(rows.children).forEach((row) => {
             const priceTd = (row as HTMLElement).querySelector(
                 '[data-id="td-price"]',
             ) as HTMLTableCellElement;
@@ -197,7 +197,7 @@
             if (priceTd) priceTd.style.display = showPrice ? "" : "none";
             if (cpaTd) cpaTd.style.display = showPrice ? "" : "none";
             if (diffTd) diffTd.style.display = showDelta ? "" : "none";
-        }
+        });
     }
 
     function toggleDiagramVisibility() {
