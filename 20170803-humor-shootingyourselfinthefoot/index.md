@@ -3,7 +3,6 @@ title: Shooting yourself in the foot
 date: 2017/08/03
 edited: 2018/04/15
 tags:
-    - humor
 ---
 
 **Javascript**: You attempt to shoot yourself in the foot. Unfortunately, the

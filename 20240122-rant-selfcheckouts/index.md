@@ -2,7 +2,6 @@
 title: "Rant: Self-Checkouts are nearly great"
 date: 2024/01/22
 tags:
-    - rant
 ---
 
 On the whole, I like self-checkouts. They're more space efficient so there's

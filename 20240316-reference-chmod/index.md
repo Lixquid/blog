@@ -3,6 +3,7 @@ title: "Reference: chmod syntax"
 date: 2024/03/16
 tags:
     - reference
+    - tool
 ---
 
 > tl;dr: \[Special,\] User, Group, Other.

@@ -2,7 +2,6 @@
 title: "Never: The Ultimate Subtype"
 date: 2023/10/16
 tags:
-    - type_theory
     - typescript
 ---
 
