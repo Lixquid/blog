@@ -1,6 +1,7 @@
 ---
 title: Dynamic DNS with DDClient, Cloudflare, and Docker
 date: "2020-08-20"
+description: "A tutorial for setting up Dynamic DNS using DDClient, Cloudflare, and Docker. Keeps a floating home IP address pointed at a stable domain name."
 tags:
     - tutorial
 ---

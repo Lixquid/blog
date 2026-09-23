@@ -1,6 +1,7 @@
 ---
 title: "Rant: Self-Checkouts are nearly great"
 date: "2024-01-22"
+description: "A rather pointless rant about self-checkouts."
 tags: []
 ---
 

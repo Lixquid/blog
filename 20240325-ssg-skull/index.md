@@ -2,6 +2,7 @@
 title: "Small Shelf Games: Skull"
 date: "2024-03-25"
 edited: "2024-04-08"
+description: "The first post in the Small Shelf Games series, covering Skull with generic components. A super simple bluffing game with really simple rules."
 tags:
     - small_shelf_games
     - games
@@ -104,9 +105,10 @@ or they reveal a Skull card, the Reveal Phase ends.
    Skull card, but still needs to reveal more cards to meet their bid:
     1. The Challenger can then pick any stack to reveal the top card from.
 
-       It is not required to completely reveal a stack before moving to the
-       next one; the only requirement is that the Challenger reveals the top
-       card from a stack before revealing a lower card in the same stack.
+        It is not required to completely reveal a stack before moving to the
+        next one; the only requirement is that the Challenger reveals the top
+        card from a stack before revealing a lower card in the same stack.
+
 4. If the Challenger reveals a Skull card in someone else's stack, the Reveal
    Phase also ends in their failure.
 5. If the Challenger successfully reveals the number of cards they bid without
@@ -116,16 +118,16 @@ or they reveal a Skull card, the Reveal Phase ends.
 
 1. All players then pick up their stacks and reintegrate them into their hands.
 2. If the Challenger:
-    - Revealed *a Skull card in their own stack*, they choose a card from their
+    - Revealed _a Skull card in their own stack_, they choose a card from their
       hand to discard for the rest of the game. (Normally, this would be a
       Flower card so they can still catch out other players with their Skull
       card.)
-    - Revealed *a Skull card in someone else's stack*, the Challenger shuffles
+    - Revealed _a Skull card in someone else's stack_, the Challenger shuffles
       their hand and allows the player whose stack contained the Skull card to
       draw a card at random from their hand to be discarded for the rest of the
       game. They might still have their Skull card, or they might not! Some
       careful bluffing might be needed to keep the other players guessing.
-    - Revealed *the number of cards they bid without revealing a Skull card*,
+    - Revealed _the number of cards they bid without revealing a Skull card_,
       they discard one of their Win Markers.
         - If the Challenger has discarded both of their Win Markers, they've
           won the game!
@@ -148,11 +150,11 @@ The game is over if either of the following conditions are met:
 
 ## Variants
 
-- *Open Bid*: Players can bid at any time during the Bidding Phase, not just
+- _Open Bid_: Players can bid at any time during the Bidding Phase, not just
   when it's their turn.
     - This makes the game a lot more dynamic, but care should be taken to
       ensure quiet players aren't drowned out.
-- *Fortune favours the Bold*: The Challenger always starts the next round, win
+- _Fortune favours the Bold_: The Challenger always starts the next round, win
   or lose.
     - Good for introducing new players to the game, as it softens the
       consequences of losing a round and encourages them to bid more.

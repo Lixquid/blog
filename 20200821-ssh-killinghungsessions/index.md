@@ -1,6 +1,7 @@
 ---
 title: Killing a hung SSH Session
 date: "2020-08-21"
+description: "How to kill a hung SSH session with the client's built-in escape sequences."
 tags:
     - ssh
 ---

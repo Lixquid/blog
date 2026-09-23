@@ -1,6 +1,7 @@
 ---
 title: "Never: The Ultimate Subtype"
 date: "2023-10-16"
+description: "An exploration of TypeScript's `never`, the bottom type that every other type can be assigned to. Explains bottom types and where they're useful in practice."
 tags:
     - typescript
 ---

@@ -1,6 +1,7 @@
 ---
 title: Monads
 date: "2025-06-25"
+description: "A practical, theory-light explanation of what monads are and why they're useful."
 tags: []
 hidden: true
 ---
@@ -17,7 +18,7 @@ words like "functor" and "commutative", and your friends will tire of you saying
 
 I currently think I'm in the unique position of having a practical understanding
 of what monads are and why they're useful with essentially none of the
-theoretical understanding, which is either refreshing or hideously, depending on
+theoretical understanding, which is either refreshing or hideous, depending on
 your perspective.
 
 Note that I'm going to be light on why monads are useful, and focus more on

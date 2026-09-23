@@ -1,6 +1,7 @@
 ---
 title: "Reference: NATO Alphabet"
 date: "2025-06-18"
+description: "A reference for the NATO phonetic alphabet, a standardized set of words for representing letters. Includes a web tool for easy speaking."
 tags:
     - reference
     - tool

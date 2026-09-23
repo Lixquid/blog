@@ -2,6 +2,7 @@
 title: Shooting yourself in the foot
 date: "2017-08-03"
 edited: "2018-04-15"
+description: "Various ways of shooting yourself in the foot in programming languages."
 tags: []
 ---
 

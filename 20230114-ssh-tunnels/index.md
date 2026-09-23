@@ -2,11 +2,13 @@
 title: SSH Tunnels
 date: "2023-01-14"
 edited: "2024-03-16"
+description: "A guide to SSH local and remote port forwarding for tunneling network traffic. Perfect for reaching machines on closed local networks via a remote server."
 tags:
     - ssh
 ---
 
 tl;dr:
+
 ```sh
 ssh -fNTL <local port>:<target host>:<target port> <remote ssh server>
 # Forward traffic from local port to target host's target port
@@ -21,8 +23,8 @@ servers; perfect if you want to access a machine on a closed local network via
 a public facing machine!
 
 There are two fundamental commands to establish tunnels; `-L` (local
-forwarding) and `-R` (remote forwarding). Local forwarding forwards from *your
-local to a remote*, remote forwarding forwards from *a remote to your local*.
+forwarding) and `-R` (remote forwarding). Local forwarding forwards from _your
+local to a remote_, remote forwarding forwards from _a remote to your local_.
 Simple!
 
 Ok, well, not really. Diagrams help the most with this, so I've included some
@@ -30,11 +32,12 @@ to try and break down exactly what the commands are doing.
 
 Before we begin, establishing some terminology will help if you get lost in the
 myriad of servers and targets:
-- *Local*: The machine you're physically at; the one running the ssh client
-- *Remote*: The machine you're ssh-ing into; the machine running `sshd`, and
+
+- _Local_: The machine you're physically at; the one running the ssh client
+- _Remote_: The machine you're ssh-ing into; the machine running `sshd`, and
   whose ssh port you can see from your local
-- *Target*: The machine you're trying to get / grant access to; visible only to
-  *either* the local or remote (depending on local or remote forwarding!)
+- _Target_: The machine you're trying to get / grant access to; visible only to
+  _either_ the local or remote (depending on local or remote forwarding!)
 
 ```
 Diagram Key:
@@ -61,6 +64,7 @@ Local forwarding establishes a tunnel to the remote server, then instructs the
 remote ssh to forward traffic to a target machine only the remote can see.
 
 Some use cases for this:
+
 - The target server only exposes the ssh port; you want to communicate with a
   port that's blocked by a firewall
 - The target server is only on a local network with the remote; you want to
@@ -126,6 +130,7 @@ From there, it's sent to its target.
 While less commonly used than local forwarding, it still has its uses when
 you're inside a closed environment and can't accept any incoming connections.
 Some use cases:
+
 - You're on a NAT-ed network like a home consumer network that doesn't allow
   any incoming connections, and want to expose a service
 - You're within a closed network and want to grant access to a hidden server
@@ -214,13 +219,13 @@ ssh -R 9000:192.168.0.1:443 10.10.10.1
 Some extra flags that are useful when using ssh as a tunnel:
 
 - `-f`: Backgrounds ssh
-  - Useful to avoid clogging up your terminal with an inoperable ssh session.
+    - Useful to avoid clogging up your terminal with an inoperable ssh session.
 - `-N`: No remote commands
-  - Stops ssh from bothering to set up command handling; appropriate if you
-    just want to forward traffic.
+    - Stops ssh from bothering to set up command handling; appropriate if you
+      just want to forward traffic.
 - `-T`: Disable tty allocation
-  - Since no commands are being sent, we don't need a pseudo-terminal
-    allocated.
+    - Since no commands are being sent, we don't need a pseudo-terminal
+      allocated.
 
 ## Bonus Tip: Reusing an existing connection
 
@@ -240,10 +245,10 @@ Forwarding port.
 These commands can be seen in `man ssh`, but for easy access:
 
 - `-L <local port>:<target host>:<target port>`
-  - Local forwarding
+    - Local forwarding
 - `-R <remote port>:<target host>:<target port>`
-  - Remote forwarding
+    - Remote forwarding
 - `-KL <local port>`
-  - Kills a local forwarding connection
+    - Kills a local forwarding connection
 - `-KR <remote port>`
-  - Kills a remote forwarding connection
+    - Kills a remote forwarding connection

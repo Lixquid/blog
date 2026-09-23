@@ -1,6 +1,7 @@
 ---
 title: "Small Shelf Games: No Mercy"
 date: "2024-07-05"
+description: "A Small Shelf Games series post covering No Mercy, a delightfully simple push-your-luck card game."
 tags:
     - small_shelf_games
     - games
@@ -50,30 +51,30 @@ Each player acts in turn until the round ends. On each player's turn:
 1. Collect all the face-up cards in your tableau (the area in front of you) and
    put them face-down into your Loot Pile. (For your first turn, you won't have
    any face-up cards.)
-2. Decide whether to *Draw* or *Stop*.
-    - If you *Draw*, turn the top card over, and place it face-up in your
-      tableau. Check the [Draw](#section-draw) section below. You can *Draw* as
-      many times as you like, until you either decide to *Stop* or you *Bust*.
-    - If you *Stop*, your turn ends; it's now the next player's turn.
+2. Decide whether to _Draw_ or _Stop_.
+    - If you _Draw_, turn the top card over, and place it face-up in your
+      tableau. Check the [Draw](#section-draw) section below. You can _Draw_ as
+      many times as you like, until you either decide to _Stop_ or you _Bust_.
+    - If you _Stop_, your turn ends; it's now the next player's turn.
 
 <h3 id="section-draw">Draw</h3>
 
 So, you've just revealed a card from the Draw Pile; first or tenth, what
 happens next is the same:
 
-- If the card matches a card already in your tableau, you've *Bust*; put all
+- If the card matches a card already in your tableau, you've _Bust_; put all
   the cards in your tableau into the Discard Pile. Those cards are out of the
   game, and your turn is over.
-    - **Important**: This only applies if you have *three or more* cards in
+    - **Important**: This only applies if you have _three or more_ cards in
       your tableau when you draw a matching card. If you have two or fewer
-      cards, you can add it to your tableau, and choose to *Draw* or *Stop*
+      cards, you can add it to your tableau, and choose to _Draw_ or _Stop_
       as normal.
 - If the card doesn't match any cards in your tableau, add it to a new column
   in your tableau.
-- *Optionally*, you can choose to take any face-up cards that match the rank of
+- _Optionally_, you can choose to take any face-up cards that match the rank of
   the card you just drew from all other players' tableaus and add them to your
   own tableau.
-- You can now choose to *Draw* or *Stop* again, as above.
+- You can now choose to _Draw_ or _Stop_ again, as above.
 
 ### Tableau Layout
 
@@ -88,7 +89,7 @@ tableaus when considering whether to steal cards or push their luck.
 ## Ending the Round
 
 The instant the last card is drawn from the Draw Pile, the round ends. If the
-last card drawn causes a *Bust*, the player who drew it loses their current
+last card drawn causes a _Bust_, the player who drew it loses their current
 tableau as normal, otherwise everyone collects their tableau cards into their
 Loot Piles.
 
@@ -106,20 +107,20 @@ simple rules.
 ## Glossary
 
 - **Draw Pile**: The face-down pile of cards in the center of the table where
-  cards are drawn into the *Tableau* from. Once this is empty, the round ends.
-- **Tableau**: The area where face-up cards that a player collects by *Stopping*
-  are placed. Cards can be *stolen* from the Tableau by other players when they
+  cards are drawn into the _Tableau_ from. Once this is empty, the round ends.
+- **Tableau**: The area where face-up cards that a player collects by _Stopping_
+  are placed. Cards can be _stolen_ from the Tableau by other players when they
   draw a card of the same rank. When it's your turn, all the cards in your
-  Tableau are placed face-down in your *Loot Pile*.
+  Tableau are placed face-down in your _Loot Pile_.
 - **Loot Pile**: The face-down pile of cards each player has in front of them.
   Cards in the Loot Pile count as your score at the end of the round, and
   cannot be stolen from.
-- **Draw**: The action of turning over the top card of the *Draw Pile* and
-  placing it in your *Tableau*. If the card matches a card already in your
-  Tableau, you *Bust*.
-- **Bust**: Revealing a card of a rank that's already in your *Tableau* when
-  you *Draw*. You lose all the cards in your Tableau to the *Discard Pile*,
+- **Draw**: The action of turning over the top card of the _Draw Pile_ and
+  placing it in your _Tableau_. If the card matches a card already in your
+  Tableau, you _Bust_.
+- **Bust**: Revealing a card of a rank that's already in your _Tableau_ when
+  you _Draw_. You lose all the cards in your Tableau to the _Discard Pile_,
   and your turn ends.
-- **Discard Pile**: The face-down pile of cards from players' *Tableaus* that
-  have been *Busted*. Cards in the Discard Pile are out of the game, and don't
+- **Discard Pile**: The face-down pile of cards from players' _Tableaus_ that
+  have been _Busted_. Cards in the Discard Pile are out of the game, and don't
   count towards anyone's score.

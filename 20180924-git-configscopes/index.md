@@ -1,6 +1,7 @@
 ---
 title: Git Config Scopes
 date: "2018-09-24"
+description: "An explanation of Git's system, user, and repository configuration scopes. Covers how they override each other and why all options are valid in every scope."
 tags:
     - git
 ---

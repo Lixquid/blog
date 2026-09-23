@@ -2,6 +2,7 @@
 title: "House Rules: President"
 date: "2018-03-08"
 edited: "2024-03-18"
+description: "House rules for President, a luck-based card game that scales easily to large groups by adding more decks."
 tags:
     - houserules
     - games
@@ -11,12 +12,12 @@ Another card game popular among my friends, although less so than Prediction
 Whist. This relies more on luck, but because it's far more flexible to the
 number of players you can add more decks and have far more people playing.
 
-## Requirements ##
+## Requirements
 
 - A standard 52 playing card deck
 - One Joker
 
-## Glossary ##
+## Glossary
 
 - **President**: The player currently in first place.
 - **Shithead**: The player currently in last place.
@@ -24,7 +25,7 @@ number of players you can add more decks and have far more people playing.
   place, respectively.
     > **Note**: With 3 players or less, there are no *Vice*s.
 
-## Card Strength ##
+## Card Strength
 
 Cards have a unique order:
 
@@ -33,11 +34,11 @@ Cards have a unique order:
 3. Next is Aces
 4. Next is Kings, and so on and so forth, down to `3`s
 
-## Before the Round ##
+## Before the Round
 
 - Deal the entire deck to all players present.
 - If this is the first Round of the game, skip this section and go straight to
-  *During the Round*.
+  _During the Round_.
 - The President and the Shithead swap 2 cards. This is done by placing the
   two cards you want to give face down in front of you, and then swapping when
   both players have placed cards. This is to prevent whatever the opposite
@@ -47,7 +48,7 @@ Cards have a unique order:
 - If the game has a Vice President and Vice Shithead, they repeat the steps as
   above, but instead only surrender 1 card to each other.
 
-## During the Round ##
+## During the Round
 
 - The President starts play. If this is the first round and there is no
   President, the person to the Dealer's left starts play.
@@ -57,8 +58,8 @@ Cards have a unique order:
   higher value than played.
     > **Example**: If Player A plays a Pair of `6`s, Player B must play a Pair,
     > and it must be a Pair of `7`s or higher.
-- If the person cannot play, they can instead *Pass*.
-- If every player *Passes* except the one who last played, the current stack
+- If the person cannot play, they can instead _Pass_.
+- If every player _Passes_ except the one who last played, the current stack
   is burned and the player who last played can now start play as above.
 - The order that people get rid of all of their cards determines their rank:
     - The First player is the President
@@ -66,7 +67,7 @@ Cards have a unique order:
     - The Second to Last player is the Vice Shithead
     - The Last player is the Shithead
 
-## The Joker ##
+## The Joker
 
 The Joker is a special card. It has multiple special properties:
 
@@ -75,9 +76,9 @@ The Joker is a special card. It has multiple special properties:
   else in that group.
     > **Example**: A King and a Joker is the same value as a pair of Kings.
 - If it is used as any part of a player's final play (if they go out
-  immediately after playing it), that player *instantly* becomes the Shithead.
+  immediately after playing it), that player _instantly_ becomes the Shithead.
 
-## Variations ##
+## Variations
 
 - Fall from Grace
     - The player who was the President last round must go out first in the
@@ -87,7 +88,7 @@ The Joker is a special card. It has multiple special properties:
       of the cards (except the Joker) are reversed. `3` becomes the most
       powerful non-Joker card, and `2` becomes the weakest.
 
-## Automatic Shithead Rankings ##
+## Automatic Shithead Rankings
 
 Multiple circumstances can cause players to become the Shithead. Player rank is
 determined as (Higher means higher rank):
@@ -97,11 +98,13 @@ determined as (Higher means higher rank):
 - Playing the Joker as the last play
 
 > **Example**:
+>
 > 1. Player A went out first, but used a Joker on the last hand
 > 2. Player B went out second, but was the President and has fell from grace
 > 3. Player C went out last
 >
 > Rankings:
+>
 > 1. Player C is the President (despite going out last)
 > 2. Player B
 > 3. Player A is the Shithead (despite going out first)

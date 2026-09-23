@@ -1,6 +1,7 @@
 ---
 title: "Life Tip: Date Old Files"
 date: "2023-12-10"
+description: "A life tip on putting dates in old file names instead of accumulating countless `_old` copies. Makes cleanup and figuring out the latest version far easier."
 tags:
     - lifetip
 ---

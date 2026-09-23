@@ -1,6 +1,7 @@
 ---
 title: "Reference: chmod syntax"
 date: "2024-03-16"
+description: "A quick reference for `chmod` permission syntax, numeric bit masks, and the entity-operator-permission format. Covers special, user, group, and other permissions."
 tags:
     - reference
     - tool
