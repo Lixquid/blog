@@ -56,10 +56,7 @@
 
     // Update checkboxes from output
     const updateCheckboxes = () => {
-        if (output.validity.valid) {
-            output.classList.remove("invalid");
-        } else {
-            output.classList.add("invalid");
+        if (!output.validity.valid) {
             return;
         }
         const [, entities, operation, permissions] = output.value.match(
@@ -136,7 +133,6 @@
         }
 
         output.value = `${entities}${operation}${permissions}`;
-        output.classList.remove("invalid");
     };
     eNon.addEventListener("change", updateOutput);
     eAll.addEventListener("change", updateOutput);

@@ -58,10 +58,7 @@
 
     // Update checkboxes from output
     const updateCheckboxes = () => {
-        if (output.validity.valid) {
-            output.classList.remove("invalid");
-        } else {
-            output.classList.add("invalid");
+        if (!output.validity.valid) {
             return;
         }
         const value = output.value;
@@ -89,7 +86,6 @@
         const w =
             (wr.checked ? 4 : 0) + (ww.checked ? 2 : 0) + (wx.checked ? 1 : 0);
         output.value = `${o}${g}${w}`;
-        output.classList.remove("invalid");
     };
     or.addEventListener("change", updateOutput);
     ow.addEventListener("change", updateOutput);

@@ -251,7 +251,7 @@ Buttons:
 Text Inputs:
 
 - <input type="text" value="Text">
-- <input type="text" value="Invalid" class="invalid">
+- <input type="text" value="Invalid" pattern="[0-9]+">
 - <input type="text" value="Disabled" disabled>
 
 Select Inputs:
