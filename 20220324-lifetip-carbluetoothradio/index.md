@@ -1,6 +1,6 @@
 ---
 title: "Life Tip: Car Bluetooth Radio"
-date: 2022/03/24
+date: "2022-03-24"
 tags:
     - lifetip
 ---

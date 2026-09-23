@@ -1,6 +1,6 @@
 ---
 title: "Small Shelf Games: Crazy Eights"
-date: 2024/04/19
+date: "2024-04-19"
 tags:
     - small_shelf_games
     - games

@@ -1,6 +1,6 @@
 ---
 title: TypeScript Nominal Types
-date: 2021/10/08
+date: "2021-10-08"
 tags:
     - typescript
 ---

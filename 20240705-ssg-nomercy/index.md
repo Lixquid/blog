@@ -1,6 +1,6 @@
 ---
 title: "Small Shelf Games: No Mercy"
-date: 2024/07/05
+date: "2024-07-05"
 tags:
     - small_shelf_games
     - games
@@ -18,11 +18,11 @@ keep drawing one more card.
 ## No Mercy
 
 - _Players_: 2-5
-	- _Recommended_: 4
+    - _Recommended_: 4
 - _Complexity_: Low
 - _Type_: Push Your Luck
 - _Required_:
-	- Three identical decks of 52 Standard Playing Cards.
+    - Three identical decks of 52 Standard Playing Cards.
 
 ## Game Setup
 
@@ -51,10 +51,10 @@ Each player acts in turn until the round ends. On each player's turn:
    put them face-down into your Loot Pile. (For your first turn, you won't have
    any face-up cards.)
 2. Decide whether to *Draw* or *Stop*.
-	- If you *Draw*, turn the top card over, and place it face-up in your
-	  tableau. Check the [Draw](#section-draw) section below. You can *Draw* as
-	  many times as you like, until you either decide to *Stop* or you *Bust*.
-	- If you *Stop*, your turn ends; it's now the next player's turn.
+    - If you *Draw*, turn the top card over, and place it face-up in your
+      tableau. Check the [Draw](#section-draw) section below. You can *Draw* as
+      many times as you like, until you either decide to *Stop* or you *Bust*.
+    - If you *Stop*, your turn ends; it's now the next player's turn.
 
 <h3 id="section-draw">Draw</h3>
 
@@ -64,10 +64,10 @@ happens next is the same:
 - If the card matches a card already in your tableau, you've *Bust*; put all
   the cards in your tableau into the Discard Pile. Those cards are out of the
   game, and your turn is over.
-	- **Important**: This only applies if you have *three or more* cards in
-	  your tableau when you draw a matching card. If you have two or fewer
-	  cards, you can add it to your tableau, and choose to *Draw* or *Stop*
-	  as normal.
+    - **Important**: This only applies if you have *three or more* cards in
+      your tableau when you draw a matching card. If you have two or fewer
+      cards, you can add it to your tableau, and choose to *Draw* or *Stop*
+      as normal.
 - If the card doesn't match any cards in your tableau, add it to a new column
   in your tableau.
 - *Optionally*, you can choose to take any face-up cards that match the rank of

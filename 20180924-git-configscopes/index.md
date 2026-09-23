@@ -1,6 +1,6 @@
 ---
 title: Git Config Scopes
-date: 2018/09/24
+date: "2018-09-24"
 tags:
     - git
 ---

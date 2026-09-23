@@ -1,7 +1,7 @@
 ---
 title: SSH Tunnels
-date: 2023/01/14
-edited: 2024/03/16
+date: "2023-01-14"
+edited: "2024-03-16"
 tags:
     - ssh
 ---

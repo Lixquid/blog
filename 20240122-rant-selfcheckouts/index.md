@@ -1,7 +1,7 @@
 ---
 title: "Rant: Self-Checkouts are nearly great"
-date: 2024/01/22
-tags:
+date: "2024-01-22"
+tags: []
 ---
 
 On the whole, I like self-checkouts. They're more space efficient so there's

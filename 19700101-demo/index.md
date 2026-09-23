@@ -1,10 +1,10 @@
 ---
 title: Demo Post
-date: 1970/01/01
-hidden: true
+date: "1970-01-01"
 tags:
-  - demo
-  - post
+    - demo
+    - post
+hidden: true
 ---
 
 This is a demo post used for testing formatting and styling. It should not

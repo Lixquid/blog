@@ -1,7 +1,7 @@
 ---
 title: Garmin Development Style
-date: 2023/07/17
-tags:
+date: "2023-07-17"
+tags: []
 ---
 
 Unlike Android Wear (Java) or Fitbit (JavaScript), Garmin apps and watch faces

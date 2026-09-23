@@ -1,6 +1,6 @@
 ---
 title: "Snippet: Creating a .gitignore file in PowerShell"
-date: 2024/03/23
+date: "2024-03-23"
 tags:
     - snippets
     - powershell

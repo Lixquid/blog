@@ -1,6 +1,6 @@
 ---
 title: Merging two repositories in Git
-date: 2018/12/25
+date: "2018-12-25"
 tags:
     - git
 ---

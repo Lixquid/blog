@@ -1,6 +1,6 @@
 ---
 title: "Pizza sizes"
-date: 2025/06/15
+date: "2025-06-15"
 tags:
     - tool
 ---

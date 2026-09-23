@@ -1,6 +1,6 @@
 ---
 title: "House Rules: Superfight"
-date: 2018/03/09
+date: "2018-03-09"
 tags:
     - houserules
     - games

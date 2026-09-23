@@ -1,6 +1,6 @@
 ---
 title: "Reference: chmod syntax"
-date: 2024/03/16
+date: "2024-03-16"
 tags:
     - reference
     - tool

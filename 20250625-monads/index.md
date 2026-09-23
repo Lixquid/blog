@@ -1,6 +1,7 @@
 ---
 title: Monads
-date: 2025/06/25
+date: "2025-06-25"
+tags: []
 hidden: true
 ---
 
@@ -105,10 +106,10 @@ Haskell is a language that is heavily based on Monads, and has a lot of syntacti
 
 ```haskell
 do
-	value <- getValue
-	result <- processValue value
-	isValid <- validateResult result
-	return isValid
+    value <- getValue
+    result <- processValue value
+    isValid <- validateResult result
+    return isValid
 ```
 
 This is still completely type-safe, but this can exist in a function that doesn't care what monad is returned by `getValue`, as long as it has the two functions we talked about earlier.

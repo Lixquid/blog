@@ -1,7 +1,7 @@
 ---
 title: "Food: Instant Noodles"
-date: 2023/12/15
-tags:
+date: "2023-12-15"
+tags: []
 ---
 
 I absolutely love instant noodles. They're cheap, easy to cook, somewhat tasty,

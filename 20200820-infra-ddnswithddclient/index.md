@@ -1,6 +1,6 @@
 ---
 title: Dynamic DNS with DDClient, Cloudflare, and Docker
-date: 2020/08/20
+date: "2020-08-20"
 tags:
     - tutorial
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Snippet: HIST_IGNORE_SPACE in PowerShell"
-date: 2024/06/10
+date: "2024-06-10"
 tags:
     - snippets
     - powershell
@@ -33,8 +33,8 @@ On to the snippet!
 
 ```powershell
 Set-PSReadLineOption -AddToHistoryHandler {
-	param ([string] $line)
-	return $line[0] -ne " "
+    param ([string] $line)
+    return $line[0] -ne " "
 }
 ```
 

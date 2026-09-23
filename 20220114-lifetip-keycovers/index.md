@@ -1,6 +1,6 @@
 ---
 title: "Life Tip: Key Covers"
-date: 2022/01/14
+date: "2022-01-14"
 tags:
     - lifetip
 ---

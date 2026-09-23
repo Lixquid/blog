@@ -1,7 +1,7 @@
 ---
 title: "House Rules: Prediction Whist"
-date: 2018/03/07
-edited: 2024/03/18
+date: "2018-03-07"
+edited: "2024-03-18"
 tags:
     - houserules
     - games

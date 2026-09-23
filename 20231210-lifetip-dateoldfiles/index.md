@@ -1,6 +1,6 @@
 ---
 title: "Life Tip: Date Old Files"
-date: 2023/12/10
+date: "2023-12-10"
 tags:
     - lifetip
 ---

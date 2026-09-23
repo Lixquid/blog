@@ -1,7 +1,7 @@
 ---
 title: "Small Shelf Games: Skull"
-date: 2024/03/25
-edited: 2024/04/08
+date: "2024-03-25"
+edited: "2024-04-08"
 tags:
     - small_shelf_games
     - games
