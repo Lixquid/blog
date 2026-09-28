@@ -32,7 +32,7 @@ module.
 
 On to the snippet!
 
-```powershell
+```powershell copy
 Set-PSReadLineOption -AddToHistoryHandler {
     param ([string] $line)
     return $line[0] -ne " "
@@ -43,7 +43,7 @@ This snippet is quite a bit simpler than other snippets, with only a couple of
 elements to describe. The curly braces after the `-AddToHistoryHandler`
 argument creates a script block (akin to a function), which takes a single
 string parameter. We check if the first character of the line is a space; if it
-is *not* a space, `$true` is returned, and the command is added to the history.
+is _not_ a space, `$true` is returned, and the command is added to the history.
 
 If you would prefer to have history forget a different pattern, you can change
 the script block to return a boolean matching whichever pattern you'd like to

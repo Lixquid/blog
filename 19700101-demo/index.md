@@ -188,6 +188,28 @@ With line numbers:
  */
 ```
 
+With a copy button:
+
+```typescript copy
+/**
+ * This is a code block.
+ * @param a A string.
+ */
+function example(a: string): number {
+  console.log(`Hello, ${a}!`);
+  return 5 * 5;
+}
+```
+
+With a copy button and a title:
+
+```typescript title=hello copy
+/**
+ * This is a code block.
+ * @param a A string.
+ */
+```
+
 Variants:
 
 ```typescript type=doesntcompile

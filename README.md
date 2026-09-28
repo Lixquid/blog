@@ -58,6 +58,15 @@ specifier. Linenumbering can start on any arbitrary number by using
 int x = 0;
 ```
 
+Codeblocks can have a copy button by adding `copy` after the language specifier.
+The button appears at the right end of the codeblock header (a header is shown
+even if no `title` is set) and copies the code block contents to the clipboard
+when clicked.
+
+```c copy
+int x = 0;
+```
+
 Codeblocks can have negative, cautionary, or positive styling attached by adding
 `type=doesntcompile`, `type=errors`, `type=incorrect`, `type=badpractice`,
 `type=dangerous`, or `type=correct` after the language specifier.

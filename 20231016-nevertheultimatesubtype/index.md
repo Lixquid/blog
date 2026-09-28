@@ -44,7 +44,7 @@ It's actually quite easy to create functions that "return" this impossible
 type; just don't let them return at all! The function that never returns can
 hence never return a value that doesn't match the impossible type.
 
-```ts title=TypeScript
+```ts title=TypeScript copy
 // TypeScript calls the ultimate subtype "never".
 function logAndFail(): never {
     console.log("Invariant foo was violated!");
@@ -72,7 +72,7 @@ A simple example is detecting unreachable code. If you have a function that
 only returns `never`, then you can be sure that the function will never
 actually return, and the code after the call is unreachable.
 
-```ts title=TypeScript
+```ts title=TypeScript copy
 function fail(): never {
     throw new Error("This function never returns");
 }
@@ -88,7 +88,7 @@ union type as a special case. Because a type union is meant to represent that a
 value could be any of the given types, by definition, a value can never be
 `never`; it's completely safe to remove it from the union.
 
-```ts title=TypeScript
+```ts title=TypeScript copy
 function fail(): never {
     throw new Error("This function never returns");
 }

@@ -18,7 +18,7 @@ Today's snippet is a simple script to get a language or framework specific
 that create entire directories full of files I don't need, so I like to start
 with a `.gitignore` file and build up from there.
 
-```powershell
+```powershell copy
 function New-GitIgnore {
     <#
     .SYNOPSIS
@@ -80,7 +80,7 @@ It's likely that this list of `.gitignore` files will change over time, so you
 can use this snippet to get the most up-to-date list, formatted for use in the
 `ValidateSet` attribute:
 
-```powershell
+```powershell copy
 # Get the list of files / directories in the repository
 $body = Invoke-RestMethod "https://api.github.com/repos/github/gitignore/git/trees/main"
 
