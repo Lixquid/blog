@@ -1,7 +1,7 @@
 ---
-title: Merging two repositories in Git
+title: Merging Two Repositories in Git
 date: "2018-12-25"
-description: "A step-by-step guide to merging two Git repositories into one while preserving their history, by merging while preserving a branch."
+description: "A post giving a step-by-step guide to merging two Git repositories into one while preserving their history, by merging while preserving a branch."
 tags:
     - git
 ---

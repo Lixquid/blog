@@ -2,10 +2,10 @@
 title: "Small Shelf Games: Skull"
 date: "2024-03-25"
 edited: "2024-04-08"
-description: "The first post in the Small Shelf Games series, covering Skull with generic components. A super simple bluffing game with really simple rules."
+description: "A post in the Small Shelf Games series, covering Skull with generic components. A super simple bluffing game with really simple rules."
 tags:
-    - small_shelf_games
     - games
+    - small_shelf_games
 ---
 
 Welcome to the first post in the Small Shelf Games series! Every post in this

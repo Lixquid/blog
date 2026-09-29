@@ -1,7 +1,7 @@
 ---
 title: Garmin Development Style
 date: "2023-07-17"
-description: "Personal experiences and opinions on writing good Monkey C code for Garmin devices. Covers style choices that sometimes contradict Garmin's own recommended conventions."
+description: "A post covering personal experiences and opinions on writing good Monkey C code for Garmin devices. Covers style choices that sometimes contradict Garmin's own recommended conventions."
 tags: []
 ---
 

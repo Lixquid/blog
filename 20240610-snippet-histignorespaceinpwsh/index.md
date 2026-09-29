@@ -1,10 +1,10 @@
 ---
 title: "Snippet: HIST_IGNORE_SPACE in PowerShell"
 date: "2024-06-10"
-description: "A PowerShell configuration change that emulates zsh's HIST_IGNORE_SPACE. Stops commands starting with a space, like ones containing passwords, from being saved to history."
+description: "A post about a PowerShell configuration change that emulates zsh's HIST_IGNORE_SPACE. Stops commands starting with a space, like ones containing passwords, from being saved to history."
 tags:
-    - snippets
     - powershell
+    - snippets
 ---
 
 Welcome back to snippets, the series where I share small scripts or commands.

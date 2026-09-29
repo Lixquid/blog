@@ -1,7 +1,7 @@
 ---
 title: TypeScript Nominal Types
 date: "2021-10-08"
-description: "An exploration of TypeScript's structural type system and how to emulate nominal typing within it. Covers branding and related techniques for telling structurally identical types apart."
+description: "A post exploring TypeScript's structural type system and how to emulate nominal typing within it. Covers branding and related techniques for telling structurally identical types apart."
 tags:
     - typescript
 ---

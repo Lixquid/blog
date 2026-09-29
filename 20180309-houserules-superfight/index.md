@@ -1,10 +1,10 @@
 ---
 title: "House Rules: Superfight"
 date: "2018-03-09"
-description: "House rules for the party game Superfight. These tweaks make the base ruleset more flexible for awkward situations."
+description: "A post detailing house rules for the party game Superfight. These tweaks make the base ruleset more flexible for awkward situations."
 tags:
-    - houserules
     - games
+    - houserules
 ---
 
 [Superfight](https://www.superfightlive.com/) is a party card game which

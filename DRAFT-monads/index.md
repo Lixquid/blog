@@ -1,7 +1,7 @@
 ---
 title: Monads
 date: "9999-01-01"
-description: "A practical, theory-light explanation of what monads are and why they're useful."
+description: "A post giving a practical, theory-light explanation of what monads are and why they're useful."
 tags: []
 hidden: true
 ---

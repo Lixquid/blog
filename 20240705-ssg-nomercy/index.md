@@ -1,10 +1,10 @@
 ---
 title: "Small Shelf Games: No Mercy"
 date: "2024-07-05"
-description: "A Small Shelf Games series post covering No Mercy, a delightfully simple push-your-luck card game."
+description: "A post in the Small Shelf Games series, covering No Mercy, a delightfully simple push-your-luck card game."
 tags:
-    - small_shelf_games
     - games
+    - small_shelf_games
 ---
 
 Welcome back to the Small Shelf Games series; a series of posts about games that

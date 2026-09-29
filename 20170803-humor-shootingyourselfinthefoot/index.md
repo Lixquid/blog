@@ -1,8 +1,8 @@
 ---
-title: Shooting yourself in the foot
+title: Shooting Yourself in the Foot
 date: "2017-08-03"
 edited: "2018-04-15"
-description: "Various ways of shooting yourself in the foot in programming languages."
+description: "A post covering various ways of shooting yourself in the foot in programming languages."
 tags: []
 ---
 

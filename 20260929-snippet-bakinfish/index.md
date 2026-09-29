@@ -1,7 +1,7 @@
 ---
 title: "Snippet: Backing Up Files in Fish"
 date: "2026-09-29"
-description: "A fish function for easily backing up files locally with an appended date."
+description: "A post with a fish function for easily backing up files locally with an appended date."
 tags:
     - fish
     - snippets

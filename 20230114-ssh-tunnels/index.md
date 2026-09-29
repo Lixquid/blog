@@ -2,7 +2,7 @@
 title: SSH Tunnels
 date: "2023-01-14"
 edited: "2024-03-16"
-description: "A guide to SSH local and remote port forwarding for tunneling network traffic. Perfect for reaching machines on closed local networks via a remote server."
+description: "A post about SSH local and remote port forwarding for tunnelling network traffic. Perfect for reaching machines on closed local networks via a remote server."
 tags:
     - ssh
 ---

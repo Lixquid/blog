@@ -2,10 +2,10 @@
 title: "House Rules: Prediction Whist"
 date: "2018-03-07"
 edited: "2024-03-18"
-description: "House rules for Prediction Whist, a trick-taking card game variant of 'Oh Hell'."
+description: "A post detailing the house rules for Prediction Whist, a trick-taking card game variant of 'Oh Hell'."
 tags:
-    - houserules
     - games
+    - houserules
 ---
 
 This is a relatively popular card game among my friends that we enjoy

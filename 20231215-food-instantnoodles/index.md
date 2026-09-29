@@ -1,7 +1,7 @@
 ---
 title: "Food: Instant Noodles"
 date: "2023-12-15"
-description: "A collection of mix-ins and customisations for instant noodles."
+description: "A post with a collection of mix-ins and customisations for instant noodles."
 tags: []
 ---
 

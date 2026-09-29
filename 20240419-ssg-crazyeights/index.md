@@ -1,10 +1,10 @@
 ---
 title: "Small Shelf Games: Crazy Eights"
 date: "2024-04-19"
-description: "A Small Shelf Games series post covering Crazy Eights, a classic card game that's endlessly easy to modify. Great for kids at low complexity or adults at high complexity."
+description: "A post in the Small Shelf Games series, covering Crazy Eights, a classic card game that's endlessly easy to modify. Great for kids at low complexity or adults at high complexity."
 tags:
-    - small_shelf_games
     - games
+    - small_shelf_games
 ---
 
 Welcome back to the Small Shelf Games series; a series of posts about games

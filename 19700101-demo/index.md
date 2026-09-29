@@ -1,7 +1,7 @@
 ---
 title: Demo Post
 date: "1970-01-01"
-description: "A demo post used for testing the blog's formatting and styling. It should not appear via any of the normal navigation methods."
+description: "A post used for testing the blog's formatting and styling. It should not appear via any of the normal navigation methods."
 tags:
     - demo
     - post

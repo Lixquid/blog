@@ -1,10 +1,10 @@
 ---
 title: "Snippet: Creating a .gitignore file in PowerShell"
 date: "2024-03-23"
-description: "A PowerShell snippet for fetching language-specific `.gitignore` templates from GitHub."
+description: "A post with a PowerShell snippet for fetching language-specific `.gitignore` templates from GitHub."
 tags:
-    - snippets
     - powershell
+    - snippets
 ---
 
 Welcome to snippets! This is a new series of posts where I'll be sharing small

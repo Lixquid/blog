@@ -1,7 +1,7 @@
 ---
 title: "Life Tip: Key Covers"
 date: "2022-01-14"
-description: "A life tip on using coloured key covers to tell similar-looking keys apart at a glance."
+description: "A post about using coloured key covers to tell similar-looking keys apart at a glance."
 tags:
     - lifetip
 ---

@@ -1,7 +1,7 @@
 ---
-title: "Pizza sizes"
+title: "Pizza Sizes"
 date: "2025-06-15"
-description: "A reference table of pizza areas by diameter, and a web tool for visualizing and calculating pizza sizes."
+description: "A post with a reference table of pizza areas by diameter, and a web tool for visualising and calculating pizza sizes."
 tags:
     - tool
 ---

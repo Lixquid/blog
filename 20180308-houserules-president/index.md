@@ -2,10 +2,10 @@
 title: "House Rules: President"
 date: "2018-03-08"
 edited: "2024-03-18"
-description: "House rules for President, a luck-based card game that scales easily to large groups by adding more decks."
+description: "A post detailing the house rules for President, a luck-based card game that scales easily to large groups by adding more decks."
 tags:
-    - houserules
     - games
+    - houserules
 ---
 
 Another card game popular among my friends, although less so than Prediction
