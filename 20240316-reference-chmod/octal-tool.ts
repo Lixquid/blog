@@ -19,21 +19,21 @@
             <tbody>
                 <tr>
                     <th>Read</th>
-                    <td><input type="checkbox" data-id="or" class="large"/></td>
-                    <td><input type="checkbox" data-id="gr" class="large"/></td>
-                    <td><input type="checkbox" data-id="wr" class="large"/></td>
+                    <td><input type="checkbox" data-id="or" style="width: 1.5em; height: 1.5em"/></td>
+                    <td><input type="checkbox" data-id="gr" style="width: 1.5em; height: 1.5em"/></td>
+                    <td><input type="checkbox" data-id="wr" style="width: 1.5em; height: 1.5em"/></td>
                 </tr>
                 <tr>
                     <th>Write</th>
-                    <td><input type="checkbox" data-id="ow" class="large" checked/></td>
-                    <td><input type="checkbox" data-id="gw" class="large" /></td>
-                    <td><input type="checkbox" data-id="ww" class="large" /></td>
+                    <td><input type="checkbox" data-id="ow" style="width: 1.5em; height: 1.5em" checked/></td>
+                    <td><input type="checkbox" data-id="gw" style="width: 1.5em; height: 1.5em" /></td>
+                    <td><input type="checkbox" data-id="ww" style="width: 1.5em; height: 1.5em" /></td>
                 </tr>
                 <tr>
                     <th>Execute</th>
-                    <td><input type="checkbox" data-id="ox" class="large" /></td>
-                    <td><input type="checkbox" data-id="gx" class="large" /></td>
-                    <td><input type="checkbox" data-id="wx" class="large" /></td>
+                    <td><input type="checkbox" data-id="ox" style="width: 1.5em; height: 1.5em" /></td>
+                    <td><input type="checkbox" data-id="gx" style="width: 1.5em; height: 1.5em" /></td>
+                    <td><input type="checkbox" data-id="wx" style="width: 1.5em; height: 1.5em" /></td>
                 </tr>
             </tbody>
         </table>

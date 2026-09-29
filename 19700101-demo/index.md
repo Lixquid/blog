@@ -287,7 +287,7 @@ Select Inputs:
 Checkboxes:
 
 - <label><input type="checkbox" checked> Checkbox</label>
-- <label><input type="checkbox" class="large"> Large Checkbox</label>
+- <label><input type="checkbox" style="width: 1.5em; height: 1.5em"> Large Checkbox</label>
 
 Radio Buttons:
 
