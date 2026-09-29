@@ -35,6 +35,18 @@ hidden: >
     If true, the post will not show up in the index or tag pages.
 ```
 
+## Draft Posts
+
+Posts that are not yet ready for publication are stored in folders prefixed
+with `DRAFT-` instead of a date, for example `DRAFT-monads`. Drafts use the
+same `index.md` and front-matter format as regular posts, with two
+conventions:
+
+- `date` is set to the sentinel value `"9999-01-01"` so that drafts sort after
+  every published post and never appear as the newest post.
+- `hidden` is set to `true` so that drafts do not appear in the post index,
+  tag pages, or RSS feed.
+
 ## Blog Post Formatting
 
 Posts are formatted with markdown.
