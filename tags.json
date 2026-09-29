@@ -1,0 +1,50 @@
+{
+    "games": {
+        "type": "topic",
+        "description": "Posts about games, traditional or otherwise."
+    },
+    "git": {
+        "type": "topic",
+        "description": "Posts about the Git Version Control System."
+    },
+    "houserules": {
+        "type": "topic",
+        "description": "Posts detailing custom rules for existing games."
+    },
+    "lifetip": {
+        "type": "topic",
+        "description": "Posts about small nuggets of wisdom I've found useful in general, day to day life."
+    },
+    "powershell": {
+        "type": "topic",
+        "description": "Posts about the PowerShell scripting language, commonly found on the Windows operating system."
+    },
+    "reference": {
+        "type": "type",
+        "description": "Posts detailing large blocks of reference information."
+    },
+    "small_shelf_games": {
+        "type": "topic",
+        "description": "Posts about my Small Shelf Games project, covering traditional games you can play with common game components."
+    },
+    "snippets": {
+        "type": "type",
+        "description": "Posts that contain small amounts of code to make things more convenient."
+    },
+    "ssh": {
+        "type": "topic",
+        "description": "Posts about the Secure Shell (ssh) program and protocol."
+    },
+    "tool": {
+        "type": "type",
+        "description": "Posts that contain small, active tools inside of them."
+    },
+    "tutorial": {
+        "type": "type",
+        "description": "Posts that contain detailed, step-by-step instructions for how to do things."
+    },
+    "typescript": {
+        "type": "topic",
+        "description": "Posts about the TypeScript programming language, a language that compiles down to JavaScript."
+    }
+}
