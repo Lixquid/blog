@@ -1,11 +1,10 @@
 ---
 title: "Snippet: Backing Up Files in Fish"
-date: "9999-01-01"
+date: "2026-09-29"
 description: "A fish function for easily backing up files locally with an appended date."
 tags:
     - fish
     - snippets
-hidden: true
 ---
 
 Welcome back to snippets, the series where I share small scripts or commands.
