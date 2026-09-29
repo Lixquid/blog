@@ -53,7 +53,7 @@ Voluptatem magni illo voluptatem quas tempora in est. Dignissimos et veritatis e
 ## Emphasis
 
 Regular text.
-This is *emphasised text*.
+This is _emphasised text_.
 This is **strong text**.
 This is both **_emphasised and strong text_**.
 
@@ -75,20 +75,20 @@ This is an [example link with title](https://example.com/ "Example Title").
 
 - Unordered list item 1
 - Unordered list item 2
-  - Unordered list item 2.1
-  - Unordered list item 2.2
-    - Unordered list item 2.2.1
-    - Unordered list item 2.2.2
-  - Unordered list item 2.3
+    - Unordered list item 2.1
+    - Unordered list item 2.2
+        - Unordered list item 2.2.1
+        - Unordered list item 2.2.2
+    - Unordered list item 2.3
 - Unordered list item 3
 
 1. Ordered list item 1
 2. Ordered list item 2
-   1. Ordered list item 2.1
-   2. Ordered list item 2.2
-      1. Ordered list item 2.2.1
-      2. Ordered list item 2.2.2
-   3. Ordered list item 2.3
+    1. Ordered list item 2.1
+    2. Ordered list item 2.2
+        1. Ordered list item 2.2.1
+        2. Ordered list item 2.2.2
+    3. Ordered list item 2.3
 3. Ordered list item 3
 
 ## Blockquotes
@@ -112,10 +112,10 @@ This is an [example link with title](https://example.com/ "Example Title").
 
 This is ~~strikethrough~~ text.
 
-|   | Table | Column |
-| - | ----- | ------ |
-| 1 | 2     | 3      |
-| 4 | 5     | 6      |
+|     | Table | Column |
+| --- | ----- | ------ |
+| 1   | 2     | 3      |
+| 4   | 5     | 6      |
 
 ## Alerts
 
@@ -157,9 +157,9 @@ With language:
  * @param a A string.
  */
 function example(a: string): number {
-  console.log(`Hello, ${a}!`);
-  // This is a comment.
-  return 5 * 5;
+    console.log(`Hello, ${a}!`);
+    // This is a comment.
+    return 5 * 5;
 }
 ```
 
@@ -196,8 +196,8 @@ With a copy button:
  * @param a A string.
  */
 function example(a: string): number {
-  console.log(`Hello, ${a}!`);
-  return 5 * 5;
+    console.log(`Hello, ${a}!`);
+    return 5 * 5;
 }
 ```
 
@@ -227,9 +227,9 @@ function sum(a: number, b: number) {
 ```
 
 ```typescript type=badpractice
-String.prototype.reverse = function() {
+String.prototype.reverse = function () {
     return this.split("").reverse().join("");
-}
+};
 ```
 
 ```typescript type=dangerous
@@ -293,3 +293,29 @@ Radio Buttons:
 
 - <label><input type="radio" name="radio" checked> Radio 1</label>
 - <label><input type="radio" name="radio"> Radio 2</label>
+
+## HTML Demo
+
+```html htmldemo
+<p>This is a <strong>Demo!</strong></p>
+
+<button id="clickme">Click me</button>
+
+<style>
+    #clickme {
+        color: red;
+    }
+</style>
+
+<script>
+    document.querySelector("#clickme").addEventListener("click", () => {
+        alert("Hello");
+    });
+</script>
+```
+
+Small variant (`htmldemo=small`, 8em tall):
+
+```html htmldemo=small
+<p>This is a <strong>Small Demo!</strong></p>
+```

@@ -67,6 +67,24 @@ when clicked.
 int x = 0;
 ```
 
+Codeblocks can be turned into interactive HTML demos by adding `htmldemo` after
+the language specifier. The block is rendered as a vertically split container:
+an editable textarea on the left containing the raw HTML, and an iframe on the
+right rendering the code. Editing the textarea live-updates the iframe. The
+iframe is server-rendered with the initial code so the demo is visible even
+without JavaScript.
+
+```html htmldemo
+<p>This is a <strong>Demo!</strong></p>
+```
+
+The demo container is `20em` tall by default. Adding a value with `htmldemo=small`
+renders the same split container at a compact `8em` height instead.
+
+```html htmldemo=small
+<p>This is a <strong>Small Demo!</strong></p>
+```
+
 Codeblocks can have negative, cautionary, or positive styling attached by adding
 `type=doesntcompile`, `type=errors`, `type=incorrect`, `type=badpractice`,
 `type=dangerous`, or `type=correct` after the language specifier.
