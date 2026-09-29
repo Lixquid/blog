@@ -1,4 +1,8 @@
 {
+    "fish": {
+        "type": "topic",
+        "description": "Posts about the Fish shell and scripting language, a modern shell for Linux."
+    },
     "games": {
         "type": "topic",
         "description": "Posts about games, traditional or otherwise."
