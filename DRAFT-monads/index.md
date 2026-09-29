@@ -1,6 +1,6 @@
 ---
 title: Monads
-date: "2025-06-25"
+date: "9999-01-01"
 description: "A practical, theory-light explanation of what monads are and why they're useful."
 tags: []
 hidden: true
