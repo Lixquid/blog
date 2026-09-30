@@ -1,10 +1,9 @@
 ---
 title: "Life Tip: Mixing a good Protein Shake"
-date: "9999-01-01"
+date: "2026-09-30"
 description: "A post detailing a technique for mixing a smooth protein (or anything else) shake."
 tags:
     - lifetip
-hidden: true
 ---
 
 I'm not usually a big fan of protein shakes, or other shakes that you have to
