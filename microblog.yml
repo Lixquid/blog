@@ -1,0 +1,97 @@
+- date: 2026-10-08
+  post: >
+      If you've `cd`'d somewhere, you can return to the directory you were in
+      previously with `cd -`. This works for `git checkout -` as well!
+- date: 2025-12-11
+  post: >
+      If you have badges with spikes in the back, and they tend to fall out, you
+      can get badge holders that are secured with screws / hex keys. To date,
+      I've not had a badge fall out secured with one!
+- date: 2025-12-11
+  post: >
+      If your car has a Fuel Indicator (\u26FD) with a triangle next to it
+      (\u25C0 / \u25B6), that arrow indicates on which side the fuel intake is.
+- date: 2025-10-18
+  post: >
+      You can see what ports are in use on a #linux system with `netstat` with
+      `netstat -pln`. Mnemonic: "netstat plan".
+- date: 2025-08-11
+  post: >
+      When joining two objects in #blender with a Boolean modifier, to also copy
+      materials, the object with the modifier must also have the same materials
+      in its material slots.
+- date: 2025-08-11
+  post: >
+      You can select only the perimeter, border, outline, or boundary of a
+      #blender selection by using Select > Select Loops > Select Boundary Loop.
+- date: 2025-06-19
+  post: >
+      You can detach from an attached #docker container by pressing Ctrl-P, then
+      Ctrl-Q. This will leave the container running in the background, like if
+      you had started it with `docker run -d`.
+- date: 2025-02-28
+  post: >
+      You can get a calendar on the command line in #unix systems by running
+      `cal`. You can also specify a year with `cal 2025`.
+- date: 2024-12-04
+  post: >
+      You can find the common ancestor of two #git commits / branches with `git
+      merge-base <commit1> <commit2>`.
+- date: 2024-12-04
+  post: >
+      In #git, the commit Author is who wrote the code originally, while the
+      Committer is the person who applied the commit. Authoring happens before
+      committing, but they can be the same person or at the same time.
+- date: 2024-12-03
+  post: >
+      You can find out the default entrypoint for a #docker image by running
+        `docker inspect --format '{{.Config.Entrypoint}}' <image>`.
+- date: 2024-10-03
+  post: >
+      By default #sqlite will immediately fail with `SQLITE_BUSY` if you try to
+      write to a database that's already in use. You can instead make it wait
+      and continually retry by setting `PRAGMA busy_timeout=5000;` (this sets
+      the timeout to 5 seconds). Read more:
+      https://sqlite.org/pragma.html#pragma_busy_timeout
+- date: 2024-10-02
+  post: >
+      Avoid completely general util packages or files; more often than not they
+      end up as a dumping ground for anything and everything. Instead, try to at
+      the very least attach a single theme to them, like `randutil` or
+      `strutil`.
+- date: 2024-10-02
+  post: >
+      #sqlite does not actually enforce foreign key constraints by default for
+      historical reasons. You can (and should!) enable them by running `PRAGMA
+      foreign_keys=true;`.
+- date: 2024-10-02
+  post: >
+      If you're storing a lot of large binary data in #sqlite, consider
+      increasing the page size with `PRAGMA page_size=32768;` (this sets the
+      page size to 32KB). Note that reads and writes always happen in page-sized
+      chunks, so reads will be faster but writes will be slower. Read more:
+      https://sqlite.org/pragma.html#pragma_page_size
+- date: 2024-10-02
+  post: >
+      If you've enabled the WAL in #sqlite, you can turn down the synchronous
+      commit setting to `normal` via `PRAGMA synchronous=normal;` to make
+      `fsync` calls happen only when the WAL is checkpointed. Read more:
+      https://www.sqlite.org/pragma.html#pragma_synchronous
+- date: 2024-10-02
+  post: >
+      You can get significantly better performance in #sqlite by enabling the
+      Write Ahead Log (WAL), via `PRAGMA journal_mode=WAL;`. Read more:
+      https://www.sqlite.org/wal.html
+- date: 2024-10-02
+  post: >
+      You can pass a constructor to a #kotlin method expecting a function by
+      putting a `::` in front of the constructor type. For example,
+      `listOf(1,2,3).map(::IntWrapper)`.
+- date: 2024-09-24
+  post: >
+      Been storing passwords with a weak hash, want to use a stronger one, but
+      don't have access to the plaintext passwords? In addition to rehashing
+      with a stronger algorithm when users log in (and you temporarily have
+      access to the plaintext), you can also hash the weak hash with the
+      stronger algorithm and store that, then check by performing both hashes
+      when users log in.
