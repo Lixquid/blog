@@ -1,5 +1,12 @@
 - date: 2026-10-08
   post: >
+      It'd be nice if it was possible to keep some branches or refs in a git
+      repo private instead of pushing everything to the "main" public repo. I
+      wonder if there's a way to automatically create a git repo (or repos)
+      that would work as an extra remote that is for private publishing, then
+      autoconfigure refspecs to restrict branches to the public repo.
+- date: 2026-10-08
+  post: >
       If you've `cd`'d somewhere, you can return to the directory you were in
       previously with `cd -`. This works for `git checkout -` as well!
 - date: 2025-12-11
