@@ -50,5 +50,9 @@
     "typescript": {
         "type": "topic",
         "description": "Posts about the TypeScript programming language, a language that compiles down to JavaScript."
+    },
+    "webdev": {
+        "type": "topic",
+        "description": "Posts about general web development, the languages, technologies, or techniques commonly used."
     }
 }
