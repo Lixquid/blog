@@ -1,3 +1,8 @@
+- date: 2026-10-17
+  post: >
+      Some shortcuts I use in #bash that are downright essential and are
+      criminally under-reported: Ctrl-A to go to the start of the line, Ctrl-E
+      to go to the end, Ctrl-W to delete the last word.
 - date: 2026-10-08
   post: >
       It'd be nice if it was possible to keep some branches or refs in a git
