@@ -19,6 +19,10 @@
         "type": "topic",
         "description": "Posts about small nuggets of wisdom I've found useful in general, day to day life."
     },
+    "personal": {
+        "type": "topic",
+        "description": "Posts that cover more personal opinions; less objective information, more subjective experiences."
+    },
     "powershell": {
         "type": "topic",
         "description": "Posts about the PowerShell scripting language, commonly found on the Windows operating system."
