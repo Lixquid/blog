@@ -1,12 +1,11 @@
 ---
 title: "Snippet: Setting Up a tmux Reminder for ssh in fish"
-date: "9999-01-01"
+date: "2026-10-17"
 description: "A post with a small snippet to remind users sshing in to use tmux for the fish shell."
 tags:
     - fish
     - snippets
     - ssh
-hidden: true
 ---
 
 Welcome back to snippets, where I detail useful little scripts or commands.
